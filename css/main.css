@@ -429,6 +429,7 @@ body{
     height: 104px;
     margin-left: 107px;
     margin-top: 373px;
+    background-color: transparent;
   }
 
   .draggable img{
