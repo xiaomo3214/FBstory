@@ -1,0 +1,23 @@
+.Img{
+    position: relative;
+    margin: 0px auto;
+    width: 1080px;
+    height: 1080px;
+}
+#alpha1{
+    position: absolute;
+    z-index: 0;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+}
+
+a,button,input{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    -khtml-user-select: none;
+}
