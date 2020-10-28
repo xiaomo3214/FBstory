@@ -228,6 +228,7 @@ body{
     width: 375px;
     height: 375px;
     background-size: cover;
+    outline-style: none;
   }
  
   .kid2{
