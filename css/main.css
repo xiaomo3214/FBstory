@@ -425,6 +425,7 @@ body{
   #draggable{
     width: 138px;
     height: 104px;
+    position: absolute;
     margin-left: 107px;
     margin-top: 373px;
     background-color: transparent;

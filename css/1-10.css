@@ -80,7 +80,7 @@ body{
 }
 @keyframes circle2_10 {
     0% {left: -75%; }
-    100%  {left: 75%;}
+    100%  {left: 35%;}
 }
 
 /* .frame{
