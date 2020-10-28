@@ -430,6 +430,7 @@ body{
     margin-left: 107px;
     margin-top: 373px;
     background-color: transparent;
+    border-style: none;
   }
 
   .draggable img{
