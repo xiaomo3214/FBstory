@@ -5,7 +5,7 @@ var aa = $(".background_m8");
 var obj = document.querySelector(".background_m8");  //控制觸控
 var touchSpeed = 500;
 var startX = endX = 0;
-var mouse = false;
+// var mouse = false;
 
 if(obj) {
     wetherScroll();
@@ -15,12 +15,12 @@ if(obj) {
 //滑鼠
 function mouseEvent(){
     window.addEventListener('mousedown',function(event){
-        event.preventDefault(); //防止手機預設觸控事件
+        event.preventDefault(); //防止預設事件
     }, {passive: false});
 
     obj.addEventListener('mousedown',function(event){
         event.preventDefault();
-        mouse = true;
+        // mouse = true;
         startX = event.screenX;
     }, false);
     obj.addEventListener('mousemove',function(event){
@@ -47,7 +47,7 @@ function mouseEvent(){
     });
     obj.addEventListener('mouseup',function(event){
         event.preventDefault();
-        mouse = false;
+        // mouse = false;
         startX = endX = 0;
     }, false);
 }

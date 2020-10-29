@@ -690,36 +690,44 @@ body{
     margin-left: 147px;
   }
   .cookieone{
+    width: 36.14px;
+    height: 42px;
+    position: absolute;
+    margin-top: 615px;
+    margin-left: 110px; 
     display: none;
   }
   .cookieone img{
     width: 36.14px;
     height: 42px;
-    margin-top: 615px;
-    margin-left: 110px;
+    /* margin-top: 615px;
+    margin-left: 110px; */
   }
   .cookietwo{
+    width: 44px;
+    height: 35px;
+    position: absolute;
+    margin-top: 619px;
+    margin-left: 165px;
     display: none;
   }
   .cookietwo img{
     width: 44px;
     height: 35px;
-    margin-top: 619px;
-    margin-left: 165px;
+    /* margin-top: 619px;
+    margin-left: 165px; */
   }
   .cookiethree{
+    width: 38px;
+    height: 36px;
+    position: absolute;
+    margin-top: 618px;
+    margin-left: 229px;
     display: none;
   }
   .cookiethree img{
     width: 38px;
     height: 36px;
-    margin-top: 618px;
-    margin-left: 229px;
+    /* margin-top: 618px;
+    margin-left: 229px; */
   }
-
-
-
-
-
-
-

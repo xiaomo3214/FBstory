@@ -1,9 +1,7 @@
-/*拼圖ID CLASS
-*/
-
 var puzzle = $("#draggable");
 var startX = startY = endX = endY = 0;
 var obj = document.querySelector("#draggable");
+var mouse = false;
 
 mouseEvent();
 touchEvent();
@@ -11,13 +9,14 @@ touchEvent();
 function mouseEvent(){
     window.addEventListener('mousedown',function(event){
         event.preventDefault(); //防止預設觸控事件
+        startX = event.screenX;
+        startY = event.screenY;
     }, {passive: false});
 
     obj.addEventListener('mousedown',function(event){
         // event.preventDefault();
         mouse = true;
-        startX = event.screenX;
-        startY = event.screenY;
+        
     }, false);
     obj.addEventListener('mousemove',function(event){
         // event.preventDefault();
@@ -26,7 +25,8 @@ function mouseEvent(){
         endY = event.screenY;
         var distanceX = (endX - startX);
         var distanceY = (endY - startY);
-        if((startX!=Math.abs(distanceX) || startY!=Math.abs(distanceY)) && event.buttons == 1){
+        // console.log(event.screenX);
+        if(mouse && (startX!=Math.abs(distanceX) || startY!=Math.abs(distanceY)) && event.buttons == 1){
             if(distanceX < 0){
                 puzzle.offset({left:pos1.left+distanceX});
             }
@@ -41,6 +41,7 @@ function mouseEvent(){
             }
             startX = endX;
             startY = endY;
+            // console.log(pos1);
         }
     });
     obj.addEventListener('mouseup',function(event){
@@ -85,7 +86,7 @@ function touchEvent(){
             }
             startX = endX;
             startY = endY;
-            console.log(pos1);
+            // console.log(pos1);
         }
     });
     obj.addEventListener('touchend',function(event){

@@ -408,14 +408,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       e.preventDefault();
       count++;
       if(count == 1){
-          cookieone.style.display = 'block';
+          one.style.display = 'block';
       }
       if(count == 2){
-          cookietwo.style.display = 'block';
+        two.style.display = 'block';
       }
       if(count == 3){
-          cookiethree.style.display = 'block';
-          cookiesbag.style.display = 'none';
+        three.style.display = 'block';
+        button.style.display = 'none';
       }
    }, false);
 });
