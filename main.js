@@ -129,57 +129,57 @@ function changepagesbacktwo() {
 
 /*1-4*/
 function transparentupone() {
-  console.log('u1');
+  // console.log('u1');
   document.getElementById("upone").style.display = "none";
   document.getElementById("uptwo").style.display = "block";
   document.getElementById("upthree").style.display = "none";
 }
 function transparentuptwo() {
-  console.log('u2');
+  // console.log('u2');
   document.getElementById("upone").style.display = "none";
   document.getElementById("uptwo").style.display = "none";
   document.getElementById("upthree").style.display = "block";
 }
 function transparentupthree() {
-  console.log('u3');
+  // console.log('u3');
   document.getElementById("upone").style.display = "block";
   document.getElementById("uptwo").style.display = "none";
   document.getElementById("upthree").style.display = "none";
 }
 
 function transparentmidone() {
-  console.log('m1');
+  // console.log('m1');
   document.getElementById("midone").style.display = "none";
   document.getElementById("midtwo").style.display = "block";
   document.getElementById("midthree").style.display = "none";
 }
 function transparentmidtwo() {
-  console.log('m2');
+  // console.log('m2');
   document.getElementById("midone").style.display = "none";
   document.getElementById("midtwo").style.display = "none";
   document.getElementById("midthree").style.display = "block";
 }
 function transparentmidthree() {
-  console.log('m3');
+  // console.log('m3');
   document.getElementById("midone").style.display = "block";
   document.getElementById("midtwo").style.display = "none";
   document.getElementById("midthree").style.display = "none";
 }
 
 function transparentdownone() {
-  console.log('d1');
+  // console.log('d1');
   document.getElementById("downone").style.display = "none";
   document.getElementById("downtwo").style.display = "block";
   document.getElementById("downthree").style.display = "none";
 }
 function transparentdowntwo() {
-  console.log('d2');
+  // console.log('d2');
   document.getElementById("downone").style.display = "none";
   document.getElementById("downtwo").style.display = "none";
   document.getElementById("downthree").style.display = "block";
 }
 function transparentdownthree() {
-  console.log('d3');
+  // console.log('d3');
   document.getElementById("downone").style.display = "block";
   document.getElementById("downtwo").style.display = "none";
   document.getElementById("downthree").style.display = "none";
