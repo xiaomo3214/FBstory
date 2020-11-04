@@ -55,7 +55,8 @@ function mouseEvent(){
         if(overlap) {
             cookieleft.css("display","none");
             times++;
-            console.log(times);
+            alpha();
+            // console.log(times);
         }
         mouse = false;
         startX = startY = endX = endY = 0;
@@ -99,7 +100,8 @@ function mouseEvent(){
         if(overlap){
             cookiemid.css("display","none");
             times++;
-            console.log(times);
+            alpha();
+            // console.log(times);
         } 
         mouse = false;
         startX = startY = endX = endY = 0;
@@ -143,7 +145,8 @@ function mouseEvent(){
         if(overlap) {
             cookieright.css("display","none");
             times++;
-            console.log(times);
+            alpha();
+            // console.log(times);
         }
         mouse = false;
         startX = startY = endX = endY = 0;
@@ -192,7 +195,8 @@ function touchEvent(){
         if(overlap) {
             cookieleft.css("display","none");
             times++;
-            console.log(times);
+            alpha();
+            // console.log(times);
         }
         startX = startY = endX = endY = 0;
     }, false);
@@ -233,7 +237,8 @@ function touchEvent(){
         if(overlap) {
             cookiemid.css("display","none");
             times++;
-            console.log(times);
+            alpha();
+            // console.log(times);
         }
         startX = startY = endX = endY = 0;
     }, false);
@@ -274,12 +279,8 @@ function touchEvent(){
         if(overlap) {
             cookieright.css("display","none");
             times++;
-            console.log(times);
-            if(times > 2){
-                console.log("AA")
-                document.getElementById("peanut").style.display = "block";
-                document.getElementById("star").style.display = "none";
-            }
+            alpha();
+            // console.log(times);
         }
         startX = startY = endX = endY = 0;
     }, false);
@@ -307,4 +308,21 @@ function isOverlap(idOne,idTwo){
         rightBottom = leftTwo+widthTwo > leftOne && leftTwo+widthTwo < leftOne+widthOne                  
         && topTwo+heightTwo > topOne && topTwo+heightTwo < topOne+heightOne;
     return leftTop || rightTop || leftBottom || rightBottom;
+}
+
+var imgAlpha = 1.0, i = -0.35;
+function alpha(){
+    if(times == 1){
+        imgAlpha=imgAlpha+i;
+        document.getElementById("star").style.opacity = imgAlpha;
+    }
+    if(times == 2){
+        imgAlpha=imgAlpha+i;
+        document.getElementById("star").style.opacity = imgAlpha;
+    }
+    if(times > 2){
+        // console.log("AA");
+        // document.getElementById("peanut").style.display = "block";
+        document.getElementById("star").style.display = "none";
+    }
 }
