@@ -37,7 +37,7 @@ body{
     width: auto;
     top: 0;
     bottom: 0;
-    left: -17%;
+    left: -25%;
     right: 0;
     margin: auto;
     z-index: 1;
@@ -57,7 +57,7 @@ body{
 .prepage_8 img{
     position: absolute;
     margin-top: 2%;
-    margin-left: 18.5%;
+    margin-left: 27%;
     width: 40px;
     height: 38px;
     z-index: 3;
@@ -68,8 +68,8 @@ body{
     width: 350px;
     height: auto;
     z-index: 2;
-    margin-top: -1.2%;
-    margin-left: 15%;
+    margin-top: -1.4%;
+    margin-left: 23%;
 }
 .bottom_8 img{
     position: absolute;
@@ -77,7 +77,7 @@ body{
     height: auto;
     z-index: 2;
     margin-bottom: -1.4%;
-    margin-left: 15%;
+    margin-left: 23%;
 }
 .left_8 img{
     position: absolute;
@@ -85,7 +85,7 @@ body{
     height: 350px;
     z-index: 2;
     margin-top: 0%;
-    margin-left: 16.1%;
+    margin-left: 24%;
 }
 .right_8 img{
     position: absolute;
@@ -93,7 +93,7 @@ body{
     height: 350px;
     z-index: 2;
     margin-bottom: 0%;
-    margin-right: -0.9%;
+    margin-right: -0.85%;
 }
 
 /*舊版 

@@ -310,19 +310,15 @@ function isOverlap(idOne,idTwo){
     return leftTop || rightTop || leftBottom || rightBottom;
 }
 
-var imgAlpha = 1.0, i = -0.35;
 function alpha(){
+    // console.log(times);
     if(times == 1){
-        imgAlpha=imgAlpha+i;
-        document.getElementById("star").style.opacity = imgAlpha;
+        document.getElementById("star").style.display = "none"
     }
     if(times == 2){
-        imgAlpha=imgAlpha+i;
-        document.getElementById("star").style.opacity = imgAlpha;
+        document.getElementById("star70").style.display = "none"
     }
     if(times > 2){
-        // console.log("AA");
-        // document.getElementById("peanut").style.display = "block";
-        document.getElementById("star").style.display = "none";
+        document.getElementById("star40").style.display = "none";
     }
 }
