@@ -1,105 +1,61 @@
 var puzzle = $("#draggable");
-var startX = startY = endX = endY = 0;
-var obj = document.querySelector("#draggable");
-var mouse = false;
-var movetimes = 0;
+var startX_5 = startY_5 = endX_5 = endY_5 = 0;
+var obj_5 = document.querySelector("#draggable");
+var mouse_5 = false;
+var movetimes_5 = 0;
 var radius = 30;
+var mousespeed_5 = 1.5;
 
-mouseEvent();
-touchEvent();
+mousePuzzle();
+touchPuzzle();
 
-function mouseEvent(){
+function mousePuzzle(){
     window.addEventListener('mousedown',function(event){
         event.preventDefault(); //防止預設觸控事件
-        startX = event.screenX;
-        startY = event.screenY;
+        startX_5 = event.screenX;
+        startY_5 = event.screenY;
     }, {passive: false});
 
-    obj.addEventListener('mousedown',function(event){
+    obj_5.addEventListener('mousedown',function(event){
         // event.preventDefault();
-        mouse = true;
+        mouse_5 = true;
         
     }, false);
-    obj.addEventListener('mousemove',function(event){
+    obj_5.addEventListener('mousemove',function(event){
         // event.preventDefault();
         var pos1 = puzzle.offset();
-        endX = event.screenX;
-        endY = event.screenY;
-        var distanceX = (endX - startX);
-        var distanceY = (endY - startY);
+        endX_5 = event.screenX;
+        endY_5 = event.screenY;
+        var distanceX = (endX_5 - startX_5);
+        var distanceY = (endY_5 - startY_5);
         // console.log(event.screenX);
-        if(mouse && (startX!=Math.abs(distanceX) || startY!=Math.abs(distanceY)) && event.buttons == 1){
+        if(mouse_5 && (startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)) && event.buttons == 1){
             if(distanceX < 0){
-                puzzle.offset({left:pos1.left+distanceX});
+                puzzle.offset({left:pos1.left+distanceX/mousespeed_5});
             }
             if(distanceX > 0){
-                puzzle.offset({left:pos1.left+distanceX});
+                puzzle.offset({left:pos1.left+distanceX/mousespeed_5});
             }
             if(distanceY < 0){
-                puzzle.offset({top:pos1.top+distanceY});
+                puzzle.offset({top:pos1.top+distanceY/mousespeed_5});
             }
             if(distanceY > 0){
-                puzzle.offset({top:pos1.top+distanceY});
+                puzzle.offset({top:pos1.top+distanceY/mousespeed_5});
             }
-            startX = endX;
-            startY = endY;
+            startX_5 = endX_5;
+            startY_5 = endY_5;
             // console.log(pos1);
         }
     });
-    obj.addEventListener('mouseup',function(event){
+    obj_5.addEventListener('mouseup',function(event){
         // event.preventDefault();
-        mouse = false;
-        startX = startY = endX = endY = 0;
-    }, false);
-}
-
-function touchEvent(){
-    window.addEventListener('touchmove',function(event){
-        event.preventDefault(); //防止手機預設觸控事件
-    }, {passive: false});
-
-
-    obj.addEventListener('touchstart',function(event){
-        var touch = event.targetTouches[0];
-        startX = touch.screenX;
-        startY = touch.screenY;
-        // console.log(startX+" + "+startY);
-    }, false);
-    obj.addEventListener('touchmove',function(event){
-        var touch = event.targetTouches[0];
-        var pos1 = puzzle.offset();
-        endX = touch.screenX;
-        endY = touch.screenY;
-        var distanceX = (endX - startX);
-        var distanceY = (endY - startY);
-        // console.log(distanceX+" + "+distanceY);
-        if(startX!=Math.abs(distanceX) || startY!=Math.abs(distanceY)){
-            if(distanceX < 0){
-                puzzle.offset({left:pos1.left+distanceX});
-            }
-            if(distanceX > 0){
-                puzzle.offset({left:pos1.left+distanceX});
-            }
-            if(distanceY < 0){
-                puzzle.offset({top:pos1.top+distanceY});
-            }
-            if(distanceY > 0){
-                puzzle.offset({top:pos1.top+distanceY});
-            }
-            startX = endX;
-            startY = endY;
-            // console.log(pos1);
-        }
-    });
-    obj.addEventListener('touchend',function(event){
         if(puzzlebounce(".putpuzzle","#draggable")){
-            movetimes++;
-            if(movetimes <= 3){
-                console.log("a");
+            movetimes_5++;
+            if(movetimes_5 <= 3){
                 //隨機角度偏移
                 var pos1 = puzzle.offset();
-                var int = Math.floor(Math.random()*60);
-                var ang = (2*Math.PI/360)*6*int;
+                var int = Math.floor(Math.random()*20);
+                var ang = (2*Math.PI/360)*18*int;
                 puzzle.offset({top:pos1.top+Math.sin(ang)*radius});
                 puzzle.offset({left:pos1.left-Math.cos(ang)*radius});
             }
@@ -107,7 +63,64 @@ function touchEvent(){
                 //出現換頁提示
             }
         }
-        startX = startY = endX = endY = 0;
+        mouse_5 = false;
+        startX_5 = startY_5 = endX_5 = endY_5 = 0;
+    }, false);
+}
+
+function touchPuzzle(){
+    // window.addEventListener('touchmove',function(event){
+    //     event.preventDefault(); //防止手機預設觸控事件
+    // }, {passive: false});
+
+
+    obj_5.addEventListener('touchstart',function(event){
+        var touch = event.targetTouches[0];
+        startX_5 = touch.screenX;
+        startY_5 = touch.screenY;
+    }, false);
+    obj_5.addEventListener('touchmove',function(event){
+        var touch = event.targetTouches[0];
+        var pos1 = puzzle.offset();
+        endX_5 = touch.screenX;
+        endY_5 = touch.screenY;
+        var distanceX = (endX_5 - startX_5);
+        var distanceY = (endY_5 - startY_5);
+        // console.log(distanceX+" + "+distanceY);
+        if(startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)){
+            if(distanceX < 0){
+                puzzle.offset({left:pos1.left+distanceX});
+            }
+            if(distanceX > 0){
+                puzzle.offset({left:pos1.left+distanceX});
+            }
+            if(distanceY < 0){
+                puzzle.offset({top:pos1.top+distanceY});
+            }
+            if(distanceY > 0){
+                puzzle.offset({top:pos1.top+distanceY});
+            }
+            startX_5 = endX_5;
+            startY_5 = endY_5;
+            // console.log(pos1);
+        }
+    });
+    obj_5.addEventListener('touchend',function(event){
+        if(puzzlebounce(".putpuzzle","#draggable")){
+            movetimes_5++;
+            if(movetimes_5 <= 3){
+                //隨機角度偏移
+                var pos1 = puzzle.offset();
+                var int = Math.floor(Math.random()*20);
+                var ang = (2*Math.PI/360)*18*int;
+                puzzle.offset({top:pos1.top+Math.sin(ang)*radius});
+                puzzle.offset({left:pos1.left-Math.cos(ang)*radius});
+            }
+            else{
+                //出現換頁提示
+            }
+        }
+        startX_5 = startY_5 = endX_5 = endY_5 = 0;
     }, false);
 }
 function puzzlebounce(idOne,idTwo){

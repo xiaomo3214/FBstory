@@ -347,7 +347,7 @@ function changepagesbackseven() {
 
 /*1-10*/
 function changepageseleven() {
-  document.getElementById("1-11").style.display = "block";
+  document.getElementById("1-14").style.display = "block";
   document.getElementById("1-10").style.display = "none";
 }
 function changepagesbackeight() {
@@ -393,7 +393,7 @@ function changepagesfifteen() {
   document.getElementById("1-14").style.display = "none";
 }
 function changepagesbackthirteen() {
-  document.getElementById("1-13").style.display = "block";
+  document.getElementById("1-10").style.display = "block";
   document.getElementById("1-14").style.display = "none";
 }
 

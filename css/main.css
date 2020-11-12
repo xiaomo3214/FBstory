@@ -424,16 +424,16 @@ body{
   }
   .putpuzzle{
     display: block;
-    width: 140px;
-    height: 105px;
+    width: 15px;
+    height: 10px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    margin-left: 213px;
-    margin-top: 23px;
+    margin-left: 210px;
+    margin-top: 20px;
   }
 
   #draggable{
