@@ -60,7 +60,7 @@ body{
 .nextpage_10 img{
     position: absolute;
     margin-bottom: 2%;
-    margin-right: 2%;
+    margin-right: 0.3%;
     width: 40px;
     height: 38px;
     z-index: 3;

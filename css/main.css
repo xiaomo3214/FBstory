@@ -453,6 +453,25 @@ body{
     margin-top: 373px;
   }
 
+  .drop_prepage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 27.5px;
+    left: 26.3px;
+    margin: auto;
+    z-index: 5;
+  }
+
+  .drop_nextpage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    bottom: 28.5px;
+    right: 25px;
+    margin: auto;
+    z-index: 5;
+  }
   
   /*1-7*/
 
@@ -683,6 +702,19 @@ body{
     right: 0;
     z-index: 1;
   }
+  .allpeanut{
+    max-height: auto;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 780px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
   .peanut img{
     /* display: none; */
     max-height: 100%;
@@ -758,4 +790,24 @@ body{
     height: 36px;
     /* margin-top: 618px;
     margin-left: 229px; */
+  }
+
+  .dropcookie_prepage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 230px;
+    left: 26.3px;
+    margin: auto;
+    z-index: 5;
+  }
+
+  .dropcookie_nextpage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    bottom: 230px;
+    right: 25px;
+    margin: auto;
+    z-index: 5;
   }

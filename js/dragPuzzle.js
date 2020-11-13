@@ -53,11 +53,7 @@ function mousePuzzle(){
             movetimes_5++;
             if(movetimes_5 <= 3){
                 //隨機角度偏移
-                var pos1 = puzzle.offset();
-                var int = Math.floor(Math.random()*20);
-                var ang = (2*Math.PI/360)*18*int;
-                puzzle.offset({top:pos1.top+Math.sin(ang)*radius});
-                puzzle.offset({left:pos1.left-Math.cos(ang)*radius});
+                circleBounce();
             }
             else{
                 //出現換頁提示
@@ -110,11 +106,7 @@ function touchPuzzle(){
             movetimes_5++;
             if(movetimes_5 <= 3){
                 //隨機角度偏移
-                var pos1 = puzzle.offset();
-                var int = Math.floor(Math.random()*20);
-                var ang = (2*Math.PI/360)*18*int;
-                puzzle.offset({top:pos1.top+Math.sin(ang)*radius});
-                puzzle.offset({left:pos1.left-Math.cos(ang)*radius});
+                circleBounce();
             }
             else{
                 //出現換頁提示
@@ -145,4 +137,12 @@ function puzzlebounce(idOne,idTwo){
         rightBottom = leftTwo+widthTwo > leftOne && leftTwo+widthTwo < leftOne+widthOne                  
         && topTwo+heightTwo > topOne && topTwo+heightTwo < topOne+heightOne;
     return leftTop || rightTop || leftBottom || rightBottom;
+}
+
+function circleBounce(){
+    var pos1 = puzzle.offset();
+    var int = Math.floor(Math.random()*10);
+    var ang = (2*Math.PI/360)*36*int;
+    puzzle.offset({top:pos1.top+Math.sin(ang)*radius});
+    puzzle.offset({left:pos1.left-Math.cos(ang)*radius});
 }

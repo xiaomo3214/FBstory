@@ -172,7 +172,6 @@ function touchCookie(){
         var distanceX = (endX_14 - startX_14);
         var distanceY = (endY_14 - startY_14);
         if(startX_14!=Math.abs(distanceX) || startY_14!=Math.abs(distanceY)){
-            cookieleft.css("opacity",0.8);
             if(distanceX < 0){
                 cookieleft.offset({left:pos1.left+distanceX});
             }
