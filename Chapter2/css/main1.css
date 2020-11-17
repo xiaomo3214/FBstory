@@ -21,7 +21,6 @@ body{
 }
 */
 
-
 /*2-2*/
 .secondpage{
   display: none;
@@ -64,25 +63,27 @@ body{
     height: auto;
   }
 
-  .background{
+  .view{
     max-height: 100%;
     max-width: 100%;
     position: absolute;
+    height: 335px;
+    width: 335px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden; 
   }
 
-  .background img{
-    max-height: 100%;
-    max-width: 100%;
+  .view img{
     position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 0;
+    height: 670px;
+    width: auto;
+    top: 335px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -136,6 +137,32 @@ body{
 
   /*2-2*/
   .outside{
+    z-index: 1;
+  }
+
+  .background{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .background img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     z-index: 1;
   }
 
