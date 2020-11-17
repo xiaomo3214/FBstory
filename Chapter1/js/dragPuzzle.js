@@ -15,13 +15,7 @@ function mousePuzzle(){
         startX_5 = event.screenX;
         startY_5 = event.screenY;
     }, {passive: false});
-
-    obj_5.addEventListener('mousedown',function(event){
-        // event.preventDefault();
-        mouse_5 = true;
-        
-    }, false);
-    obj_5.addEventListener('mousemove',function(event){
+    window.addEventListener('mousemove',function(event){
         // event.preventDefault();
         var pos1 = puzzle.offset();
         endX_5 = event.screenX;
@@ -47,7 +41,7 @@ function mousePuzzle(){
             // console.log(pos1);
         }
     });
-    obj_5.addEventListener('mouseup',function(event){
+    window.addEventListener('mouseup',function(event){
         // event.preventDefault();
         if(puzzlebounce(".putpuzzle","#draggable")){
             movetimes_5++;
@@ -62,6 +56,53 @@ function mousePuzzle(){
         mouse_5 = false;
         startX_5 = startY_5 = endX_5 = endY_5 = 0;
     }, false);
+
+    obj_5.addEventListener('mousedown',function(event){
+        // event.preventDefault();
+        mouse_5 = true;
+        
+    }, false);
+    // obj_5.addEventListener('mousemove',function(event){
+    //     // event.preventDefault();
+    //     var pos1 = puzzle.offset();
+    //     endX_5 = event.screenX;
+    //     endY_5 = event.screenY;
+    //     var distanceX = (endX_5 - startX_5);
+    //     var distanceY = (endY_5 - startY_5);
+    //     // console.log(event.screenX);
+    //     if(mouse_5 && (startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)) && event.buttons == 1){
+    //         if(distanceX < 0){
+    //             puzzle.offset({left:pos1.left+distanceX/mousespeed_5});
+    //         }
+    //         if(distanceX > 0){
+    //             puzzle.offset({left:pos1.left+distanceX/mousespeed_5});
+    //         }
+    //         if(distanceY < 0){
+    //             puzzle.offset({top:pos1.top+distanceY/mousespeed_5});
+    //         }
+    //         if(distanceY > 0){
+    //             puzzle.offset({top:pos1.top+distanceY/mousespeed_5});
+    //         }
+    //         startX_5 = endX_5;
+    //         startY_5 = endY_5;
+    //         // console.log(pos1);
+    //     }
+    // });
+    // obj_5.addEventListener('mouseup',function(event){
+    //     // event.preventDefault();
+    //     if(puzzlebounce(".putpuzzle","#draggable")){
+    //         movetimes_5++;
+    //         if(movetimes_5 <= 3){
+    //             //隨機角度偏移
+    //             circleBounce();
+    //         }
+    //         else{
+    //             //出現換頁提示
+    //         }
+    //     }
+    //     mouse_5 = false;
+    //     startX_5 = startY_5 = endX_5 = endY_5 = 0;
+    // }, false);
 }
 
 function touchPuzzle(){

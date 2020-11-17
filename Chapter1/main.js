@@ -1,12 +1,13 @@
 /*cover*/
 var sec = 0, num = 5;
+Timer();
 function Timer(){
-  if(sec<num) setTimeout("Timer();",1000); 
+  if(sec<num) setTimeout("Timer();subSomething();",1000); 
   sec++;
 }
 document.onreadystatechange = subSomething;
 function subSomething(){
-  if(document.readyState == "complete"){ 
+  if(document.readyState == "complete" && sec >= 5){ 
     document.getElementById("cover").style.display = "none";
     document.getElementById("1-2").style.display = "block";
   }

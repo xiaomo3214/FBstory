@@ -9,6 +9,7 @@ var target = document.querySelector(".dropcookie");
 var mouse_14 = false;
 var times_14 = 0;
 var mousespeed_14 = 1.5;
+var dropcookie = 0;
 
 mouseCookie();
 touchCookie();
@@ -19,6 +20,115 @@ function mouseCookie(){
         // startX = event.screenX;
         // startY = event.screenY;
     }, {passive: false});
+    window.addEventListener('mousemove',function(event){
+        // event.preventDefault();
+        if(dropcookie == 1){
+            var pos1 = cookieleft.offset();
+            endX_14 = event.screenX;
+            endY_14 = event.screenY;
+            var distanceX = (endX_14 - startX_14);
+            var distanceY = (endY_14 - startY_14);
+            if(mouse_14 && (startX_14!=Math.abs(distanceX) || startY_14!=Math.abs(distanceY)) && event.buttons == 1){
+                if(distanceX < 0){
+                    cookieleft.offset({left:pos1.left+distanceX/mousespeed_14});
+                }
+                if(distanceX > 0){
+                    cookieleft.offset({left:pos1.left+distanceX/mousespeed_14});
+                }
+                if(distanceY < 0){
+                    cookieleft.offset({top:pos1.top+distanceY/mousespeed_14});
+                }
+                if(distanceY > 0){
+                    cookieleft.offset({top:pos1.top+distanceY/mousespeed_14});
+                }
+                startX_14 = endX_14;
+                startY_14 = endY_14;
+            }
+        }
+
+        if(dropcookie == 2){
+            var pos1 = cookiemid.offset();
+            endX_14 = event.screenX;
+            endY_14 = event.screenY;
+            var distanceX = (endX_14 - startX_14);
+            var distanceY = (endY_14 - startY_14);
+            if(mouse_14 && (startX_14!=Math.abs(distanceX) || startY_14!=Math.abs(distanceY)) && event.buttons == 1){
+                if(distanceX < 0){
+                    cookiemid.offset({left:pos1.left+distanceX/mousespeed_14});
+                }
+                if(distanceX > 0){
+                    cookiemid.offset({left:pos1.left+distanceX/mousespeed_14});
+                }
+                if(distanceY < 0){
+                    cookiemid.offset({top:pos1.top+distanceY/mousespeed_14});
+                }
+                if(distanceY > 0){
+                    cookiemid.offset({top:pos1.top+distanceY/mousespeed_14});
+                }
+                startX_14 = endX_14;
+                startY_14 = endY_14;
+            }
+        }
+
+        if(dropcookie == 3){
+            var pos1 = cookieright.offset();
+            endX_14 = event.screenX;
+            endY_14 = event.screenY;
+            var distanceX = (endX_14 - startX_14);
+            var distanceY = (endY_14 - startY_14);
+            if(mouse_14 && (startX_14!=Math.abs(distanceX) || startY_14!=Math.abs(distanceY)) && event.buttons == 1){
+                if(distanceX < 0){
+                    cookieright.offset({left:pos1.left+distanceX/mousespeed_14});
+                }
+                if(distanceX > 0){
+                    cookieright.offset({left:pos1.left+distanceX/mousespeed_14});
+                }
+                if(distanceY < 0){
+                    cookieright.offset({top:pos1.top+distanceY/mousespeed_14});
+                }
+                if(distanceY > 0){
+                    cookieright.offset({top:pos1.top+distanceY/mousespeed_14});
+                }
+                startX_14 = endX_14;
+                startY_14 = endY_14;
+            }
+        }
+    });
+    window.addEventListener('mouseup',function(event){
+        // event.preventDefault();
+        if(dropcookie == 1){
+            var overlap =isOverlap(".dropcookie",".cookieone");
+            if(overlap) {
+                cookieleft.css("display","none");
+                times_14++;
+                alpha();
+            }
+            mouse_14 = false;
+            startX_14 = startY_14 = endX_14 = endY_14 = dropcookie = 0;
+        }
+
+        if(dropcookie == 2){
+            var overlap =isOverlap(".dropcookie",".cookietwo");
+            if(overlap){
+                cookiemid.css("display","none");
+                times_14++;
+                alpha();
+            } 
+            mouse_14 = false;
+            startX_14 = startY_14 = endX_14 = endY_14 = dropcookie = 0;
+        }
+
+        if(dropcookie == 3){
+            var overlap =isOverlap(".dropcookie",".cookiethree");
+            if(overlap) {
+                cookieright.css("display","none");
+                times_14++;
+                alpha();
+            }
+            mouse_14 = false;
+            startX_14 = startY_14 = endX_14 = endY_14 = dropcookie = 0;
+        }
+    }, false);
 
     //餅乾一
     cookieone.addEventListener('mousedown',function(event){
@@ -26,8 +136,10 @@ function mouseCookie(){
         mouse_14 = true;
         startX_14 = event.screenX;
         startY_14 = event.screenY;
+        dropcookie = 1;
+        
     }, false);
-    cookieone.addEventListener('mousemove',function(event){
+    /*cookieone.addEventListener('mousemove',function(event){
         // event.preventDefault();
         var pos1 = cookieleft.offset();
         endX_14 = event.screenX;
@@ -61,7 +173,7 @@ function mouseCookie(){
         }
         mouse_14 = false;
         startX_14 = startY_14 = endX_14 = endY_14 = 0;
-    }, false);
+    }, false);*/
 
 
     //餅乾二
@@ -70,8 +182,9 @@ function mouseCookie(){
         mouse_14 = true;
         startX_14 = event.screenX;
         startY_14 = event.screenY;
+        dropcookie = 2;
     }, false);
-    cookietwo.addEventListener('mousemove',function(event){
+    /*cookietwo.addEventListener('mousemove',function(event){
         // event.preventDefault();
         var pos1 = cookiemid.offset();
         endX_14 = event.screenX;
@@ -105,7 +218,7 @@ function mouseCookie(){
         } 
         mouse_14 = false;
         startX_14 = startY_14 = endX_14 = endY_14 = 0;
-    }, false);
+    }, false);*/
 
 
     //餅乾三
@@ -114,8 +227,9 @@ function mouseCookie(){
         mouse_14 = true;
         startX_14 = event.screenX;
         startY_14 = event.screenY;
+        dropcookie = 3;
     }, false);
-    cookiethree.addEventListener('mousemove',function(event){
+    /*cookiethree.addEventListener('mousemove',function(event){
         // event.preventDefault();
         var pos1 = cookieright.offset();
         endX_14 = event.screenX;
@@ -149,7 +263,7 @@ function mouseCookie(){
         }
         mouse_14 = false;
         startX_14 = startY_14 = endX_14 = endY_14 = 0;
-    }, false);
+    }, false);*/
 }
 
 
