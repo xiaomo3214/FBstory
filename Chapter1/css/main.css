@@ -21,6 +21,10 @@ body{
 }
 */
 
+.mainpage{
+  display: none;
+}
+
 /*1-3*/
 .thridpage{
   display: none;

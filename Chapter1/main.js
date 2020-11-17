@@ -1,6 +1,16 @@
-
-
-
+/*cover*/
+var sec = 0, num = 5;
+function Timer(){
+  if(sec<num) setTimeout("Timer();",1000); 
+  sec++;
+}
+document.onreadystatechange = subSomething;
+function subSomething(){
+  if(document.readyState == "complete"){ 
+    document.getElementById("cover").style.display = "none";
+    document.getElementById("1-2").style.display = "block";
+  }
+}
 
 /*1-2*/
 function flicker() {
