@@ -64,7 +64,96 @@ function nonflicker() {
 }*/
 
 /*2-1*/
+var bg = $(".starry");  //背景
+var aa = $(".view");
+var obj = document.querySelector(".view");  //控制觸控
+var touchSpeed = 1000;
+var startX1 = endX1 = 0;
 
+if(obj) {
+  wetherScroll();
+  mouseEvent()
+}
+
+//滑鼠
+function mouseEvent(){
+  window.addEventListener('mousedown',function(event){
+      event.preventDefault(); //防止預設事件
+  }, {passive: false});
+
+  obj.addEventListener('mousedown',function(event){
+      event.preventDefault();
+      // mouse = true;
+      startX1 = event.screenX;
+  }, false);
+  obj.addEventListener('mousemove',function(event){
+      event.preventDefault();
+      var pos1 = bg.offset();
+      endX = event.screenX;
+      var distanceX = (endX - startX1);
+      if(startX1!=Math.abs(distanceX) && event.buttons == 1){
+              if(distanceX<0){
+                  if(bg.position().left+distanceX*((bg.width()-aa.width())/touchSpeed)>(-bg.width() + aa.width())
+                    && bg.position().top+distanceX*((bg.height()-aa.height())/touchSpeed)>(-bg.height() + aa.height())){
+                      bg.offset({left:pos1.left+distanceX*((bg.width()-aa.width())/touchSpeed)});
+                      bg.offset({top:pos1.top+distanceX*((bg.height()+aa.height())/touchSpeed)});
+                    }
+              }
+              else{
+                  if(bg.position().left+distanceX*((bg.width()-aa.width())/touchSpeed)<0){
+                      bg.offset({left:pos1.left+distanceX*((bg.width()-aa.width())/touchSpeed)});
+                      bg.offset({top:pos1.top+distanceX*((bg.height()+aa.height())/touchSpeed)});
+                    }
+              }
+          startX1 = endX;
+      }
+  });
+  obj.addEventListener('mouseup',function(event){
+      event.preventDefault();
+      // mouse = false;
+      startX1 = endX = 0;
+  }, false);
+}
+
+//觸控
+function wetherScroll(){
+  window.addEventListener('touchmove',function(event){
+      event.preventDefault(); //防止手機預設觸控事件
+  }, {passive: false});
+
+  obj.addEventListener('touchstart',function(event){
+      // event.preventDefault();
+      var touch = event.targetTouches[0];
+      startX1 = touch.screenX;
+  }, false);
+  obj.addEventListener('touchmove',function(event){
+      // event.preventDefault();
+      var pos1 = bg.offset();
+      var touch = event.targetTouches[0];
+      endX = touch.screenX;
+      var distanceX = (endX - startX1);
+      if(startX1!=Math.abs(distanceX)){
+        if(distanceX<0){
+          if(bg.position().left+distanceX*((bg.width()-aa.width())/touchSpeed)>(-bg.width() + aa.width())
+            && bg.position().top+distanceX*((bg.height()-aa.height())/touchSpeed)>(-bg.height() + aa.height())){
+            bg.offset({left:pos1.left+distanceX*((bg.width()-aa.width())/touchSpeed)});
+            bg.offset({top:pos1.top+distanceX*((bg.height()+aa.height())/touchSpeed)});
+          }
+        }
+        else{
+          if(bg.position().left+distanceX*((bg.width()-aa.width())/touchSpeed)<0){
+            bg.offset({left:pos1.left+distanceX*((bg.width()-aa.width())/touchSpeed)});
+            bg.offset({top:pos1.top+distanceX*((bg.height()+aa.height())/touchSpeed)});
+          }
+        }
+        startX1 = endX;
+      }
+  });
+  obj.addEventListener('touchend',function(event){
+      // event.preventDefault();
+      startX1 = endX = 0;
+  }, false);
+}
 
 function changepages() {
   document.getElementById("2-2").style.display = "block";
@@ -130,6 +219,97 @@ function changepagesback() {
 
 
 /*2-3*/
+var hand = $(".movinghand");
+var startX3 = startY3 = endX3 = endY3 = 0;
+var dragrange = $(".range");
+var mouse3 = false;
+let area = {
+  left: dragrange.offsetLeft,
+  right: dragrange.offsetLeft + dragrange.offsetWidth - hand.offsetWidth,
+  top: dragrange.offsetTop,
+  bottom: dragrange.offsetTop + dragrange.offsetHeight - hand.offsetHeight,
+};
+
+if(hand){
+  mouseHand();
+  touchHand();
+}
+function mouseHand(){
+  window.addEventListener('mousedown',function(event){
+    event.preventDefault(); //防止預設觸控事件
+    startX3 = event.screenX;
+    startY3 = event.screenY;
+    mouse3=true;
+  }, {passive: false});
+  window.addEventListener('mousemove',function(event){
+    // event.preventDefault();
+    var pos1 = hand.offset();
+    // var overlap =isOverlap(".range",".movinghand");
+    endX3 = event.screenX;
+    endY3 = event.screenY;
+    var distanceX = (endX3 - startX3);
+    var distanceY = (endY3 - startY3);
+    if(mouse3 && (startX3!=Math.abs(distanceX) || startY3!=Math.abs(distanceY)) && event.buttons == 1){
+      if(distanceX < 0 && hand.position().left + distanceX > -35){
+        hand.offset({left:pos1.left+distanceX});
+      }
+      if(distanceX > 0 && hand.position().left + distanceX < 10){
+        hand.offset({left:pos1.left+distanceX});
+      }
+      if(distanceY < 0 && hand.position().top + distanceY > -10){
+        hand.offset({top:pos1.top+distanceY});
+      }
+      if(distanceY > 0 && hand.position().top + distanceY < 2){
+        hand.offset({top:pos1.top+distanceY});
+      }
+      startX3 = endX3;
+      startY3 = endY3;
+    }
+  });
+  window.addEventListener('mouseup',function(event){
+    // event.preventDefault();
+    mouse3 = false;
+    startX3 = startY3 = endX3 = endY3 = 0;
+  }, false);
+}
+
+
+function touchHand(){
+  window.addEventListener('touchstart',function(event){
+    var touch = event.targetTouches[0];
+    startX_5 = touch.screenX;
+    startY_5 = touch.screenY;
+  }, false);
+  window.addEventListener('touchmove',function(event){
+    var touch = event.targetTouches[0];
+    var pos1 = hand.offset();
+    endX3 = touch.screenX;
+    endY3 = touch.screenY;
+    var distanceX = (endX3 - startX3);
+    var distanceY = (endY3 - startY3);
+    if(startX3!=Math.abs(distanceX) || startY3!=Math.abs(distanceY)){
+      if(distanceX < 0 && hand.position().left + distanceX > -35){
+        hand.offset({left:pos1.left+distanceX});
+      }
+      if(distanceX > 0 && hand.position().left + distanceX < 10){
+        hand.offset({left:pos1.left+distanceX});
+      }
+      if(distanceY < 0 && hand.position().top + distanceY > -10){
+        hand.offset({top:pos1.top+distanceY});
+      }
+      if(distanceY > 0 && hand.position().top + distanceY < 2){
+        hand.offset({top:pos1.top+distanceY});
+      }
+      startX3 = endX3;
+      startY3 = endY3;
+    }
+  });
+  window.addEventListener('touchend',function(event){
+    startX3 = startY3 = endX3 = endY3 = 0;
+  }, false);
+}
+
+
 function changepagesfour() {
   document.getElementById("2-4").style.display = "block";
   document.getElementById("2-3").style.display = "none";

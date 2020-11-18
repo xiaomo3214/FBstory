@@ -6,8 +6,10 @@ var movetimes_5 = 0;
 var radius = 30;
 var mousespeed_5 = 1.5;
 
-mousePuzzle();
-touchPuzzle();
+if(obj_5){
+    mousePuzzle();
+    touchPuzzle();
+}
 
 function mousePuzzle(){
     window.addEventListener('mousedown',function(event){

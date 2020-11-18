@@ -11,8 +11,10 @@ var times_14 = 0;
 var mousespeed_14 = 1.5;
 var dropcookie = 0;
 
-mouseCookie();
-touchCookie();
+if(target){
+    mouseCookie();
+    touchCookie();
+}
 
 function mouseCookie(){
     window.addEventListener('mousedown',function(event){

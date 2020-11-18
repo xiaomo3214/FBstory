@@ -450,13 +450,6 @@ body{
     border-style: none;
   }
 
-  .draggable img{
-    width: 138px;
-    height: 104px;
-    margin-left: 107px;
-    margin-top: 373px;
-  }
-
   .drop_prepage{
     position: absolute;
     width: 40px;
