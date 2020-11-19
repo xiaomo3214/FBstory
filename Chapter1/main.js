@@ -7,7 +7,7 @@ function Timer(){
 }
 document.onreadystatechange = subSomething;
 function subSomething(){
-  if(document.readyState == "complete" && sec >= 5){ 
+  if(document.readyState == "complete" && sec >= num){ 
     document.getElementById("cover").style.display = "none";
     document.getElementById("1-2").style.display = "block";
   }
