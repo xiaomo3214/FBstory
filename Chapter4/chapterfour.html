@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter4</title>   
+    <link rel="stylesheet" type="text/css" href="css/main4.css">
+    
+  </head>
+  <body>
+    <!--4-1-->
+    <div class="mainpage" id="4-1">
+      <div class="background" >
+        <div class="z1" id="normal" onclick="flicker()">
+          <img src="images/Chap1/1-2/1_2_bg.png">
+        </div>
+        <div class="button">
+          <div class="z2" id="flicker" onclick="nonflicker()">
+            <img src="images/Chap1/1-2/1_2_lighthome.png" alt="">
+          </div>
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix">
+          <div class="changepage" id="pages" onclick="changepages()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--4-2-->
+    <div class="thridpage" id="4-2">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesback()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="button">
+          <div class="room" id="room">
+            <img src="images/Chap1/1-3/1_3_bg.png" alt="">
+            <div class="button">
+              <div class="kid1" id="turn" onclick="turn()">
+                <img src="images/Chap1/1-3/turnover_gif.gif" alt="">
+              </div>
+              <div class="kid2" id="scratch" onclick="scratch()">
+                <img src="images/Chap1/1-3/scratch_gif.gif" alt="">
+              </div>
+              <div class="kid3" id="breathe" onclick="breathe()">
+                <img src="images/Chap1/1-3/breath_gif.gif" alt="">
+              </div>
+              <div class="kid4" id="wake" onclick="wake()">
+                <img src="images/Chap1/1-3/wakeup_gif.gif" alt="">
+              </div>
+            </div>
+            <div class="flowers">
+              <div class="flowerone" id="flowerone">
+                <img src="images/Chap1/1-3/flower.gif" alt="">
+              </div>
+              <div class="flowertwo" id="flowertwo">
+                <img src="images/Chap1/1-3/flower.gif" alt="">
+              </div>
+              <div class="flowerthree" id="flowerthree">
+                <img src="images/Chap1/1-3/flower.gif" alt="">
+              </div>
+              <div class="flowerfour" id="flowerfour">
+                <img src="images/Chap1/1-3/flower.gif" alt="">
+              </div>
+              <div class="flowerfive" id="flowerfive">
+                <img src="images/Chap1/1-3/flower.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="light" id="light1">
+            <input id="light" type="button" style="background-image: url(images/chap1/1-3/1_3_light.png);" onclick="transparentlight()">
+          </div>
+          <div class="outside" id="outside1">
+            <input id="outside" type="button" style="background-image: url(images/chap1/1-3/1_3_home.png);" onclick="transparentoutside()">
+          </div>
+          <!-- <div class="light" id="light" onclick="transparentlight()">
+            <img src="images/Chap1/1-3/1_3_light.png" alt="">
+          </div> -->
+          <!-- <div class="outside" id="outside" onclick="transparentoutside()">
+            <img src="images/Chap1/1-3/1_3_bg01.png" alt="">
+          </div> -->
+          <!--changepage-->
+          <div class="buttonnextfix">
+            <div class="changepage" id="pages" onclick="changepagesthree()">
+              <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+            </div>
+          </div>
+          <!-- <input id="light" type="button" style="background-image: url(https://imgur.com/utyfPA1); " onclick="transparentlight();">
+          <input id="outside" type="button" style="background-image: url(https://imgur.com/n9aSGmK); " onclick="transparentoutside();"> -->
+        </div>
+      </div>
+    </div>
+
+    <!--4-3-->
+    <div class="fourthpage" id="4-3">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepagebacktwo" id="pages" onclick="changepagesbacktwo()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="maincorner">
+          <div class="buttonup">
+            <div class="upone" id="upone" onclick="transparentupone()">
+              <img src="images/Chap1/1-4/1_4_up01.png" alt="">
+            </div>
+            <div class="uptwo" id="uptwo" onclick="transparentuptwo()">
+              <img src="images/Chap1/1-4/1_4_up02.png" alt="">
+            </div>
+            <div class="upthree" id="upthree" onclick="transparentupthree()">
+              <img src="images/Chap1/1-4/1_4_up03.png" alt="">
+            </div>
+          </div>
+          <div class="buttonmid">
+            <div class="midone" id="midone" onclick="transparentmidone()">
+              <img src="images/Chap1/1-4/1_4_mid01.png" alt="">
+            </div>
+            <div class="midtwo" id="midtwo" onclick="transparentmidtwo()">
+              <img src="images/Chap1/1-4/1_4_mid02.png" alt="">
+            </div>
+            <div class="midthree" id="midthree" onclick="transparentmidthree()">
+              <img src="images/Chap1/1-4/1_4_mid03.png" alt="">
+            </div>
+          </div>
+          <div class="buttondown">
+            <div class="downone" id="downone" onclick="transparentdownone()">
+              <img src="images/Chap1/1-4/1_4_down01.png" alt="">
+            </div>
+            <div class="downtwo" id="downtwo" onclick="transparentdowntwo()">
+              <img src="images/Chap1/1-4/1_4_down02.png" alt="">
+            </div>
+            <div class="downthree" id="downthree" onclick="transparentdownthree()">
+              <img src="images/Chap1/1-4/1_4_down03.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix">
+          <div class="changepagetwo" id="pages" onclick="changepagesfour()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--4-4-->
+    <div class="fourthtwopage" id="4-4">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesbackthree()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="button">
+          <div class="room">
+            <img src="images/Chap1/1-4-1/1_4_1_pad_shake.gif" alt="">
+            <div class="kidsit" id="mobile" onclick="mobileclick()">
+              <img src="images/Chap1/1-4-1/1_4_1_role.png" alt="" >
+            </div>
+            <div class="kidturn" id="kidturn">
+              <img src="images/Chap1/1-4-1/turnhead.gif" alt="">
+            </div>
+          </div>
+          <!--changepage-->
+          <div class="buttonnextfix">
+            <div class="changepage" id="pages" onclick="changepagesfive()">
+              <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--4-5-->
+    <div class="fifthpage" id="4-5">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesbackfour()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <img src="images/Chap1/1-5/1_5_bg.png" alt="">
+        <div class="puzzle">
+          <div id="draggable" class="ui-widget-content">
+            <img src="images/Chap1/1-5/1_5_puzzle.png">
+          </div>
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix">
+          <div class="changepage" id="pages" onclick="changepagessix()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--4-6-->
+    <div class="seventhpage" id="4-6">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesbackfive()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <img src="images/Chap1/1-7/1_7_bg.png" alt="">
+        <div class="stars">
+          <div class="starone" id="starone" onclick="maskstarclick()">
+            <img src="images/Chap1/1-7/star/star.png" alt="">
+          </div>
+          <div class="startwo" id="startwo" onclick="catstarclick()">
+            <img src="images/Chap1/1-7/star/star.png" alt="">
+          </div>
+          <div class="starthree" id="starthree"  onclick="bottlestarclick()">
+            <img src="images/Chap1/1-7/star/star.png" alt="">
+          </div>
+        </div>
+        <!-- mask -->
+        <div class="maskstar" id="maskstar">
+          <img src="images/Chap1/1-7/1_7_mask_gif.gif" alt="">
+          <div class="littlebutton">
+            <div class="maskstarclose" id="maskstarclose" onclick="maskstarclose()">
+              <img src="images/Chap1/1-7/1_7_exit.png" alt="">
+            </div>
+            <div class="maskstarlike" id="maskstarlike" onclick="maskstarlike()">
+              <img src="images/Chap1/1-7/1_7_heart.png" alt="">
+            </div>
+            <div class="maskstarshare" id="maskstarshare" onclick="maskstarshare()">
+              <img src="images/Chap1/1-7/1_7_share.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- cat -->
+        <div class="catstar" id="catstar">
+          <img src="images/Chap1/1-7/1_7_cat_gif.gif" alt="">
+          <div class="littlebutton">
+            <div class="catstarclose" id="catstarclose" onclick="catstarclose()">
+              <img src="images/Chap1/1-7/1_7_exit.png" alt="">
+            </div>
+            <div class="catstarlike" id="catstarlike" onclick="catstarlike()">
+              <img src="images/Chap1/1-7/1_7_heart.png" alt="">
+            </div>
+            <div class="catstarshare" id="catstarshare" onclick="catstarshare()">
+              <img src="images/Chap1/1-7/1_7_share.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- bottle -->
+        <div class="bottlestar" id="bottlestar">
+          <img src="images/Chap1/1-7/1_7_bottle_gif.gif" alt="">
+          <div class="littlebutton">
+            <div class="bottlestarclose" id="bottlestarclose" onclick="bottlestarclose()">
+              <img src="images/Chap1/1-7/1_7_exit.png" alt="">
+            </div>
+            <div class="bottlestarlike" id="bottlestarlike" onclick="bottlestarlike()">
+              <img src="images/Chap1/1-7/1_7_heart.png" alt="">
+            </div>
+            <div class="bottlestarshare" id="bottlestarshare" onclick="bottlestarshare()">
+              <img src="images/Chap1/1-7/1_7_share.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix">
+          <div class="changepage" id="pages" onclick="changepagesseven()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--4-7-->
+    <div class="eighthpage" id="4-7">
+      <div class="background_m8">
+        <img src="img/Chap1/1-8/1_8_bg_new2.png" class="bg_8">
+        <img src="img/Chap1/1-8/1_8_eating_new.gif" class="ani_8">
+        <!--changepage-->
+        <div class="nextpage_8" onclick="changepageseight()">
+                <img src="img/Page_change/Page_next/nextpage_white.gif">
+        </div>
+        <div class="prepage_8" onclick="changepagesbacksix()">
+                <img src="img/Page_change/Page_previous/previouspage_white.gif">
+        </div>
+        <div class="frame_8">
+            <div class="top_8">
+                <img src="img/Chap1/1-8/frame/1_8_frame_up.png">
+            </div>
+            <div class="bottom_8">
+                <img src="img/Chap1/1-8/frame/1_8_frame_down.png">
+            </div>
+            <div class="left_8">
+                <img src="img/Chap1/1-8/frame/1_8_frame_left.png">
+            </div>
+            <div class="right_8">
+                <img src="img/Chap1/1-8/frame/1_8_frame_right.png">
+            </div>
+        </div>             
+      </div>
+    </div>
+
+    <!--4-8-->
+    <div class="tenthpage" id="4-8">
+      <div class="background_m10">
+        <img src="img/Chap1/1-10/1_10_bg_new.gif" class="bg" id="bggif">
+        <div class="comet_10">
+            <img src="img/Chap1/1-10/comet/comet.gif" id="meteorgif">
+        </div>
+        <!--changepage-->
+        <div class="nextpage_10" onclick="changepagesnine()">
+            <img src="img/Page_change/Page_next/nextpage_white.gif">
+        </div>
+        <div class="prepage_10" onclick="changepagesseven()">
+            <img src="img/Page_change/Page_previous/previouspage_white.gif">
+        </div>
+      </div>
+    </div>
+
+    <!--4-9-->
+    <div class="eleventhpage" id="4-9">
+      <div class="background_m11">
+        <img src="img/Chap1/1-11/1_11_bg.png">
+        <div class="comet_11">
+            <img src="img/Chap1/1-11/comet/comet.gif">
+        </div>
+        <div class="home_11">
+            <img src="img/Chap1/1-11/1_11_home.png">
+        </div>
+        <!--changepage-->
+        <div class="nextpage_11" onclick="changepagesten()">
+            <img src="img/Page_change/Page_next/nextpage_white.gif">
+        </div>
+        <div class="prepage_11" onclick="changepageseight()">
+                <img src="img/Page_change/Page_previous/previouspage_white.gif">
+        </div>
+      </div>
+    </div>
+
+    <!--4-10-->
+    <div class="twelfthpage" id="4-10">
+      <div class="background" >
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesbacknine()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="comettohome">
+          <img src="images/Chap1/1-12/1_12_gif.gif">
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix">
+          <div class="changepage" id="pages" onclick="changepageseleven()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif">
+          </div>
+        </div>
+      </div>
+    </div>  
+  
+    <!--4-11-->
+    <div class="thirteenthpage" id="4-11">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesbackten()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="flickerball">
+          <img src="images/Chap1/1-13/1-13_gif.gif">
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix">
+          <div class="changepage" id="pages" onclick="changepagestwelve()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    
+    
+    <script src="js/1-8.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>

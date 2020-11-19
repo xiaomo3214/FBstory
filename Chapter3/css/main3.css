@@ -1,0 +1,349 @@
+/*設定的座標位置是 left:50%; 和 top:50%
+position:absolute; 是以 div 的左上角當作座標的計算點
+因此需加上margin修正*/
+/* xl - Extra large devices (large desktops, 1200px and up) */
+
+/*1-2*/
+body{
+  background-color: black;
+}
+
+/*切換下一頁*/
+/*.changepage img{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  width: 119px;
+  height: 115px;
+  z-index: 3;
+  margin-right: 420px;
+  margin-bottom: 15px;
+}
+*/
+
+
+/*3-2*/
+.secondpage{
+  display: none;
+}
+
+/*3-3*/
+.thirdpage{
+  display: none;
+}
+
+/*3-4*/
+.fourthpage{
+  display: none;
+}
+
+/*3-5*/
+.fifthpage{
+  display: none;
+}
+
+
+
+
+
+/*3-1*/
+  .mainpage{
+    width: 375px;
+    height: auto;
+  }
+
+  .background{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .background img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  
+  .buttonnextfix{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  .changepage img{
+    position: absolute;
+    margin-top: 140px;
+    margin-right: 25px;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+  }
+  .buttonpreviousfix{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  .changepageback img{
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 26px;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+  }
+
+  /*3-2*/
+  .outside{
+    z-index: 1;
+  }
+
+  #light{
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0);
+      max-height: 100%;
+      max-width: 100%;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+      z-index: 2;
+      width: 375px;
+      height: 375px;
+      background-size: cover;
+  }
+  #outside{
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0);
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    z-index: 2;
+    width: 375px;
+    height: 375px;
+    background-size: cover;
+  }
+ 
+
+  .flowers{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 812px;
+  }
+
+  .flowerone{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 110px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowertwo{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 143px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowerthree{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 176px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowerfour{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 209px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowerfive{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 242px;
+    margin-top: 607px;
+    display: none;
+  }
+
+
+
+
+  /*3-3*/
+  .blueone{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .whiteone{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  /*3-4*/
+  
+
+ 
+
+
+
+  /*3-5*/
+
+  .roomanimation img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .jellyfish img{
+    width: 375px;
+    height: 83.33px;
+    margin-top: 593px;
+  }
+
+  
+  /*2-6*/
+
+  .buttoncapsulespeak{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*1-12*/
+  .comettohome img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+
+  /*1-13*/
+  .flickerball img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+
+
+
+
+
+
