@@ -45,10 +45,6 @@ body{
   display: none;
 }
 
-
-
-
-
 /*3-1*/
   .mainpage{
     width: 375px;
@@ -161,6 +157,15 @@ body{
     position: absolute;
     margin-top: 270px;
     margin-left: 92px;
+  }
+  .peanut_changepage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    bottom: 59px;
+    right: 25px;
+    margin: auto;
+    z-index: 5;
   }
   
   .buttonnextfix{
@@ -315,9 +320,6 @@ body{
     display: none;
   }
 
-
-
-
   /*3-3*/
   .blueone{
     max-height: 100%;
@@ -354,80 +356,36 @@ body{
 
 
   /*3-5*/
-
-  .roomanimation img{
-    max-height: 100%;
+  .ani_peanut{
     max-width: 100%;
+    max-height: 100%;
     position: absolute;
     width: 375px;
     height: 375px;
+    margin: auto;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    z-index: 1;
-  }
-
-  .jellyfish img{
-    width: 375px;
-    height: 83.33px;
-    margin-top: 593px;
-  }
-
-  
-  /*2-6*/
-
-  .buttoncapsulespeak{
-    display: none;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*1-12*/
-  .comettohome img{
-    max-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+  }
+  .bigpeanut{
+    width: 91px;
+    height: 88px;
+    /* position: absolute; */
     margin: auto;
-    z-index: 1;
+    animation-name: fall,smallnut;
+    animation-duration:1.5s,1.5s; /*完成動畫所花費的時間*/
+    animation-timing-function: ease-in,ease-in;
+    animation-iteration-count:3,infinite; /*動畫應該播放的次數 infinite是無限循環*/
+    animation-delay:0s,4.5s;
+    animation-fill-mode:forwards,none;
   }
 
-
-  /*1-13*/
-  .flickerball img{
-    max-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
+  @-webkit-keyframes fall {
+    0%{-webkit-transform:translateY(0px);}
+    100%{-webkit-transform:translateY(375px);}
   }
-
-
-
-
-
-
-
+  @-webkit-keyframes smallnut {
+    0%{-webkit-transform:translateY(0px) scale(0.5);}
+    100%{-webkit-transform:translateY(375px) scale(0.5);}
+  }

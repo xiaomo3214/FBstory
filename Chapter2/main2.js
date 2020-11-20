@@ -14,7 +14,7 @@ function Timer(){
   if(sec<num) setTimeout("Timer();subSomething();",1000); 
   sec++;
 }
-document.onreadystatechange = subSomething;
+// document.onreadystatechange = subSomething;
 function subSomething(){
   if(document.readyState == "complete" && sec >= num){ 
     document.getElementById("cover").style.display = "none";
@@ -182,12 +182,6 @@ var hand = $(".movinghand");
 var startX3 = startY3 = endX3 = endY3 = 0;
 var dragrange = $(".range");
 var mouse3 = false;
-let area = {
-  left: dragrange.offsetLeft,
-  right: dragrange.offsetLeft + dragrange.offsetWidth - hand.offsetWidth,
-  top: dragrange.offsetTop,
-  bottom: dragrange.offsetTop + dragrange.offsetHeight - hand.offsetHeight,
-};
 
 if(hand){
   mouseHand();

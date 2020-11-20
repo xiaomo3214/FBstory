@@ -5,7 +5,7 @@ function Timer(){
   if(sec<num) setTimeout("Timer();subSomething();",1000); 
   sec++;
 }
-document.onreadystatechange = subSomething;
+// document.onreadystatechange = subSomething;
 function subSomething(){
   if(document.readyState == "complete" && sec >= num){ 
     document.getElementById("cover").style.display = "none";
@@ -14,8 +14,6 @@ function subSomething(){
 }
 
 /*3-1*/
-
-
 function changepages() {
   document.getElementById("3-2").style.display = "block";
   document.getElementById("3-1").style.display = "none";
@@ -29,10 +27,6 @@ function changepagesback() {
   document.getElementById("3-1").style.display = "block";
   document.getElementById("3-2").style.display = "none";
 }
-
-
-
-
 
 /*3-3*/
 function bluetowhite(){
