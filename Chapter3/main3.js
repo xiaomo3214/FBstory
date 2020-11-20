@@ -1,5 +1,5 @@
 /*cover*/
-var sec = 0, num = 1;
+var sec = 0, num = 10;
 Timer();
 function Timer(){
   if(sec<num) setTimeout("Timer();subSomething();",1000); 
