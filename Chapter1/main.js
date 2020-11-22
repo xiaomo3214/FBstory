@@ -2,7 +2,7 @@
 var sec = 0, num = 1;
 Timer();
 function Timer(){
-  if(sec<num) setTimeout("Timer();subSomething();",1000); 
+  setTimeout("Timer();subSomething();",1000); 
   sec++;
 }
 // document.onreadystatechange = subSomething;
@@ -10,6 +10,7 @@ function subSomething(){
   if(document.readyState == "complete" && sec >= num){ 
     document.getElementById("cover").style.display = "none";
     document.getElementById("1-2").style.display = "block";
+    clearTimeout("Timer();subSomething();");
   }
 }
 
