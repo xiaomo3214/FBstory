@@ -27,16 +27,16 @@ function mousePuzzle(){
         // console.log(event.screenX);
         if(mouse_5 && (startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)) && event.buttons == 1){
             if(distanceX < 0){
-                puzzle.offset({left:pos1.left+distanceX/mousespeed_5});
+                puzzle.offset({left:pos1.left-puzzle.width()/(2*$(window).width())+distanceX});
             }
             if(distanceX > 0){
-                puzzle.offset({left:pos1.left+distanceX/mousespeed_5});
+                puzzle.offset({left:pos1.left+puzzle.width()/(2*$(window).width())+distanceX});
             }
             if(distanceY < 0){
-                puzzle.offset({top:pos1.top+distanceY/mousespeed_5});
+                puzzle.offset({top:pos1.top+puzzle.height()/(2*$(window).height())+distanceY});
             }
             if(distanceY > 0){
-                puzzle.offset({top:pos1.top+distanceY/mousespeed_5});
+                puzzle.offset({top:pos1.top-puzzle.height()/(2*$(window).height())+distanceY});
             }
             startX_5 = endX_5;
             startY_5 = endY_5;
@@ -128,16 +128,16 @@ function touchPuzzle(){
         // console.log(distanceX+" + "+distanceY);
         if(startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)){
             if(distanceX < 0){
-                puzzle.offset({left:pos1.left+distanceX});
+                puzzle.offset({left:pos1.left-puzzle.width()/(2*$(window).width())+distanceX});
             }
             if(distanceX > 0){
-                puzzle.offset({left:pos1.left+distanceX});
+                puzzle.offset({left:pos1.left+puzzle.width()/(2*$(window).width())+distanceX});
             }
             if(distanceY < 0){
-                puzzle.offset({top:pos1.top+distanceY});
+                puzzle.offset({top:pos1.top+puzzle.height()/(2*$(window).height())+distanceY});
             }
             if(distanceY > 0){
-                puzzle.offset({top:pos1.top+distanceY});
+                puzzle.offset({top:pos1.top-puzzle.height()/(2*$(window).height())+distanceY});
             }
             startX_5 = endX_5;
             startY_5 = endY_5;
