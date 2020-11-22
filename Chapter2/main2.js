@@ -11,7 +11,10 @@ function nonflicker() {
 var sec = 0, num = 10;
 Timer();
 function Timer(){
-  if(sec<num) setTimeout("Timer();subSomething();",1000); 
+  if(sec<num || document.readyState != "complete") {
+    setTimeout("subSomething();",1000);
+    setTimeout("Timer();",1000); 
+  }
   sec++;
 }
 // document.onreadystatechange = subSomething;

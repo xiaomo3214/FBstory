@@ -8,7 +8,7 @@ var cookiethree = document.querySelector("#cookiethree");
 var target = document.querySelector(".dropcookie");
 var mouse_14 = false;
 var times_14 = 0;
-var mousespeed_14 = 1.5;
+var mousespeed_14 = 1,tspeed_14 = 1.295;
 var dropcookie = 0;
 
 if(target){
@@ -289,16 +289,16 @@ function touchCookie(){
         var distanceY = (endY_14 - startY_14);
         if(startX_14!=Math.abs(distanceX) || startY_14!=Math.abs(distanceY)){
             if(distanceX < 0){
-                cookieleft.offset({left:pos1.left+distanceX});
+                cookieleft.offset({left:pos1.left+distanceX*tspeed_14});
             }
             if(distanceX > 0){
-                cookieleft.offset({left:pos1.left+distanceX});
+                cookieleft.offset({left:pos1.left+distanceX*tspeed_14});
             }
             if(distanceY < 0){
-                cookieleft.offset({top:pos1.top+distanceY});
+                cookieleft.offset({top:pos1.top+distanceY*tspeed_14});
             }
             if(distanceY > 0){
-                cookieleft.offset({top:pos1.top+distanceY});
+                cookieleft.offset({top:pos1.top+distanceY*tspeed_14});
             }
             startX_14 = endX_14;
             startY_14 = endY_14;
@@ -330,16 +330,16 @@ function touchCookie(){
         var distanceY = (endY_14 - startY_14);
         if(startX_14!=Math.abs(distanceX) || startY_14!=Math.abs(distanceY)){
             if(distanceX < 0){
-                cookiemid.offset({left:pos1.left+distanceX});
+                cookiemid.offset({left:pos1.left+distanceX*tspeed_14});
             }
             if(distanceX > 0){
-                cookiemid.offset({left:pos1.left+distanceX});
+                cookiemid.offset({left:pos1.left+distanceX*tspeed_14});
             }
             if(distanceY < 0){
-                cookiemid.offset({top:pos1.top+distanceY});
+                cookiemid.offset({top:pos1.top+distanceY*tspeed_14});
             }
             if(distanceY > 0){
-                cookiemid.offset({top:pos1.top+distanceY});
+                cookiemid.offset({top:pos1.top+distanceY*tspeed_14});
             }
             startX_14 = endX_14;
             startY_14 = endY_14;
@@ -371,16 +371,16 @@ function touchCookie(){
         var distanceY = (endY_14 - startY_14);
         if(startX_14!=Math.abs(distanceX) || startY_14!=Math.abs(distanceY)){
             if(distanceX < 0){
-                cookieright.offset({left:pos1.left+distanceX});
+                cookieright.offset({left:pos1.left+distanceX*tspeed_14});
             }
             if(distanceX > 0){
-                cookieright.offset({left:pos1.left+distanceX});
+                cookieright.offset({left:pos1.left+distanceX*tspeed_14});
             }
             if(distanceY < 0){
-                cookieright.offset({top:pos1.top+distanceY});
+                cookieright.offset({top:pos1.top+distanceY*tspeed_14});
             }
             if(distanceY > 0){
-                cookieright.offset({top:pos1.top+distanceY});
+                cookieright.offset({top:pos1.top+distanceY*tspeed_14});
             }
             startX_14 = endX_14;
             startY_14 = endY_14;

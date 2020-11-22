@@ -4,7 +4,7 @@ var obj_5 = document.querySelector("#draggable");
 var mouse_5 = false;
 var movetimes_5 = 0;
 var radius = 30;
-var mousespeed_5 = 1.5;
+var speed_5 = 1,tspeed_5 = 1.285;
 
 if(obj_5){
     mousePuzzle();
@@ -27,16 +27,16 @@ function mousePuzzle(){
         // console.log(event.screenX);
         if(mouse_5 && (startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)) && event.buttons == 1){
             if(distanceX < 0){
-                puzzle.offset({left:pos1.left-puzzle.width()/(2*$(window).width())+distanceX});
+                puzzle.offset({left:pos1.left+distanceX});
             }
             if(distanceX > 0){
-                puzzle.offset({left:pos1.left+puzzle.width()/(2*$(window).width())+distanceX});
+                puzzle.offset({left:pos1.left+distanceX});
             }
             if(distanceY < 0){
-                puzzle.offset({top:pos1.top+puzzle.height()/(2*$(window).height())+distanceY});
+                puzzle.offset({top:pos1.top+distanceY});
             }
             if(distanceY > 0){
-                puzzle.offset({top:pos1.top-puzzle.height()/(2*$(window).height())+distanceY});
+                puzzle.offset({top:pos1.top+distanceY});
             }
             startX_5 = endX_5;
             startY_5 = endY_5;
@@ -128,16 +128,16 @@ function touchPuzzle(){
         // console.log(distanceX+" + "+distanceY);
         if(startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)){
             if(distanceX < 0){
-                puzzle.offset({left:pos1.left-puzzle.width()/(2*$(window).width())+distanceX});
+                puzzle.offset({left:pos1.left+distanceX*tspeed_5});
             }
             if(distanceX > 0){
-                puzzle.offset({left:pos1.left+puzzle.width()/(2*$(window).width())+distanceX});
+                puzzle.offset({left:pos1.left+distanceX*tspeed_5});
             }
             if(distanceY < 0){
-                puzzle.offset({top:pos1.top+puzzle.height()/(2*$(window).height())+distanceY});
+                puzzle.offset({top:pos1.top+distanceY*tspeed_5});
             }
             if(distanceY > 0){
-                puzzle.offset({top:pos1.top-puzzle.height()/(2*$(window).height())+distanceY});
+                puzzle.offset({top:pos1.top+distanceY*tspeed_5});
             }
             startX_5 = endX_5;
             startY_5 = endY_5;

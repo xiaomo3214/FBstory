@@ -53,7 +53,33 @@ body{
   display: none;
 }
 
-
+/*loading*/
+.ani_peanut{
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bigpeanut{
+  width: 91px;
+  height: 88px;
+  /* position: absolute; */
+  margin: auto;
+  animation-name: smallnut;
+  animation-duration:1s; /*完成動畫所花費的時間*/
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite; /*動畫應該播放的次數 infinite是無限循環*/
+}
+@-webkit-keyframes smallnut {
+  0%{-webkit-transform:translateY(-100px) scale(0.5);}
+  100%{-webkit-transform:translateY(375px) scale(0.5);}
+}
 
 
 

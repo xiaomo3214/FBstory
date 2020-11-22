@@ -1,57 +1,20 @@
-var nextPage = $("#nextPage"), prePage = $("#prePage");
-var nextButton = 
-    ["images/Page_change/Page_next/Page_next_white/nextpage_white_00000.png",
-     "images/age_change/Page_next/Page_next_white/nextpage_white_00001.png",
-     "images/Page_change/Page_next/Page_next_white/nextpage_white_00002.png",
-     "images/Page_change/Page_next/Page_next_white/nextpage_white_00003.png"];
-var preButton = 
-    ["images/Page_change/Page_previous/preced_white/previouspage_white_01.png",
-     "images/Page_change/Page_previous/preced_white/previouspage_white_02.png"]
-var next_size = nextButton.length, pre_size = preButton.length;
-var next = 0, pre = 0;
-
-$(window).ready(
-  function(){
-      chImg();
+/*cover*/
+var sec = 0, num = 5;
+Timer();
+function Timer(){
+  if(sec<num || document.readyState != "complete") {
+    setTimeout("subSomething();",1000);
+    setTimeout("Timer();",1000); 
   }
-);
-
-function getWidth(event){
-  var dWidth = $(window).width()-120;
-  if(isPhone){
-      console.log("Phone")
-      nextPage.width("80px");
-      nextPage.height("78px");
-      prePage.width("80px");
-      prePage.height("78px");
-  }else if(navigator.userAgent.match(/iPad/i)){
-      console.log("iPad");
-      nextPage.width("60px");
-      nextPage.height("58px");
-      prePage.width("60px");
-      prePage.height("58px");
-  }else{
-      console.log("Not Phone");
-      nextPage.width("40px");
-      nextPage.height("38px");
-      prePage.width("40px");
-      prePage.height("38px");
+  sec++;
+}
+// document.onreadystatechange = subSomething;
+function subSomething(){
+  if(document.readyState == "complete" && sec >= num){ 
+    document.getElementById("cover").style.display = "none";
+    document.getElementById("4-1").style.display = "block";
   }
 }
-
-function chImg(){
-  document.getElementById("nextPage").src = nextButton[next];
-  document.getElementById("prePage").src = preButton[pre];
-  next++;
-  pre++;
-  if (next >= next_size) next = 0;
-  if(pre >= pre_size) pre = 0;
-  setTimeout("chImg()",300);
-}
-
-
-
-
 
 /*4-1*/
 function flicker() {
