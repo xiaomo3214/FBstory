@@ -1,5 +1,5 @@
 /*cover*/
-var sec = 0, num = 1;
+var sec = 0, num = 5;
 Timer();
 function Timer(){
   if(sec<num || document.readyState != "complete") {
