@@ -14,9 +14,8 @@ if(obj_5){
 function mousePuzzle(){
     window.addEventListener('mousedown',function(event){
         event.preventDefault(); //防止預設觸控事件
-        var pos1 = puzzle.offset();
-        startX_5 = event.screenX - pos1.left;
-        startY_5 = event.screenY - pos1.top;
+        startX_5 = event.screenX;
+        startY_5 = event.screenY;
     }, {passive: false});
     window.addEventListener('mousemove',function(event){
         // event.preventDefault();
@@ -28,19 +27,19 @@ function mousePuzzle(){
         // console.log(event.screenX);
         if(mouse_5 && (startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)) && event.buttons == 1){
             if(distanceX < 0){
-                puzzle.offset({left:distanceX});
+                puzzle.offset({left:pos1.left+distanceX});
             }
             if(distanceX > 0){
-                puzzle.offset({left:distanceX});
+                puzzle.offset({left:pos1.left+distanceX});
             }
             if(distanceY < 0){
-                puzzle.offset({top:distanceY});
+                puzzle.offset({top:pos1.top+distanceY});
             }
             if(distanceY > 0){
-                puzzle.offset({top:distanceY});
+                puzzle.offset({top:pos1.top+distanceY});
             }
-            // startX_5 = endX_5;
-            // startY_5 = endY_5;
+            startX_5 = endX_5;
+            startY_5 = endY_5;
             // console.log(pos1);
         }
     });
@@ -116,9 +115,8 @@ function touchPuzzle(){
 
     obj_5.addEventListener('touchstart',function(event){
         var touch = event.targetTouches[0];
-        var pos1 = puzzle.offset();
-        startX_5 = touch.screenX - pos1.left;
-        startY_5 = touch.screenY - pos1.top;
+        startX_5 = touch.screenX;
+        startY_5 = touch.screenY;
     }, false);
     obj_5.addEventListener('touchmove',function(event){
         var touch = event.targetTouches[0];
@@ -130,19 +128,19 @@ function touchPuzzle(){
         // console.log(distanceX+" + "+distanceY);
         if(startX_5!=Math.abs(distanceX) || startY_5!=Math.abs(distanceY)){
             if(distanceX < 0){
-                puzzle.offset({left:distanceX*tspeed_5});
+                puzzle.offset({left:pos1.left+distanceX*tspeed_5});
             }
             if(distanceX > 0){
-                puzzle.offset({left:distanceX*tspeed_5});
+                puzzle.offset({left:pos1.left+distanceX*tspeed_5});
             }
             if(distanceY < 0){
-                puzzle.offset({top:distanceY*tspeed_5});
+                puzzle.offset({top:pos1.top+distanceY*tspeed_5});
             }
             if(distanceY > 0){
-                puzzle.offset({top:distanceY*tspeed_5});
+                puzzle.offset({top:pos1.top+distanceY*tspeed_5});
             }
-            // startX_5 = endX_5;
-            // startY_5 = endY_5;
+            startX_5 = endX_5;
+            startY_5 = endY_5;
             // console.log(pos1);
         }
     });
