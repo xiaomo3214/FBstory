@@ -4,7 +4,7 @@ var obj_5 = document.querySelector("#draggable");
 var mouse_5 = false;
 var movetimes_5 = 0;
 var radius = 30;
-var speed_5 = 1,tspeed_5 = 0.5;
+var speed_5 = 1,tspeed_5 = 1;
 
 if(obj_5){
     mousePuzzle();
