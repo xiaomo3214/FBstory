@@ -72,7 +72,7 @@ body{
   /* position: absolute; */
   margin: auto;
   animation-name: smallnut;
-  animation-duration:1s; /*完成動畫所花費的時間*/
+  animation-duration:1.25s; /*完成動畫所花費的時間*/
   animation-timing-function: ease-in;
   animation-iteration-count:infinite; /*動畫應該播放的次數 infinite是無限循環*/
 }

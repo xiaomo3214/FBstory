@@ -8,7 +8,7 @@ var cookiethree = document.querySelector("#cookiethree");
 var target = document.querySelector(".dropcookie");
 var mouse_14 = false;
 var times_14 = 0;
-var mousespeed_14 = 1,tspeed_14 = 0.5;
+var mousespeed_14 = 1,tspeed_14 = 1;
 var dropcookie = 0;
 
 if(target){
