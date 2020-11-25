@@ -3,7 +3,7 @@ position:absolute; 是以 div 的左上角當作座標的計算點
 因此需加上margin修正*/
 /* xl - Extra large devices (large desktops, 1200px and up) */
 
-/*1-2*/
+/*4-1*/
 body{
   background-color: black;
 }
@@ -21,37 +21,63 @@ body{
 }
 */
 
+/* 4-1 */
+.mainpage{
+  display: none;
+}
 
-/*2-2*/
+/*4-2*/
 .secondpage{
   display: none;
 }
 
-/*2-3*/
+/*4-3*/
 .thirdpage{
   display: none;
 }
 
-/*2-4*/
+/*4-4*/
 .fourthpage{
   display: none;
 }
 
-/*2-4-1*/
-.fourthtwopage{
-  display: none;
-
-}
-
-/*2-5*/
+/*4-5*/
 .fifthpage{
   display: none;
+
 }
 
-/*2-6*/
+/*4-6*/
 .sixthpage{
   display: none;
 }
+
+/*4-7*/
+.seventhpage{
+  display: none;
+}
+
+/* 4-8 */
+.eighthpage{
+  display: none;
+}
+
+/* 4-9 */
+.ninthpage{
+  display: none;
+}
+
+/* 4-10 */
+.tenthpage{
+  display: none;
+}
+
+/* 4-11 */
+.eleventhpage{
+  display: none;
+}
+
+
 
 /*loading*/
 .ani_peanut{
@@ -82,9 +108,7 @@ body{
 }
 
 
-
-
-/*2-1*/
+/* 4-1 */
   .mainpage{
     width: 375px;
     height: auto;
@@ -132,8 +156,8 @@ body{
   }
   .changepage img{
     position: absolute;
-    margin-top: 140px;
-    margin-right: 25px;
+    margin-top: 138px;
+    margin-right: 35px;
     width: 40px;
     height: 38px;
     z-index: 3;
@@ -160,230 +184,215 @@ body{
     z-index: 3;
   }
 
-  /*2-2*/
-  .outside{
-    z-index: 1;
-  }
-
-  #light{
-      z-index: 1;
-      background-color: rgba(0, 0, 0, 0);
-      max-height: 100%;
-      max-width: 100%;
-      position: absolute;
-      width: 100%;
-      height: auto;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      z-index: 1;
-      z-index: 2;
-      width: 375px;
-      height: 375px;
-      background-size: cover;
-  }
-  #outside{
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0);
+  /* 4-2 */
+  .character{
     max-height: 100%;
     max-width: 100%;
     position: absolute;
-    width: 100%;
-    height: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 1;
     z-index: 2;
     width: 375px;
-    height: 375px;
-    background-size: cover;
+    height: 520px;
   }
- 
-
-  .flowers{
-    max-height: 100%;
+  .char{
     max-width: 100%;
-    position: absolute;
-    width: 375px;
-    height: 812px;
-  }
-
-  .flowerone{
     max-height: 100%;
-    max-width: 100%;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+  }
+  .A{
     position: absolute;
-    width: 29px;
-    height: 42px;
-    z-index: 1;
-    margin-left: 110px;
-    margin-top: 607px;
-    display: none;
+    margin-top: 434px;
+    margin-left: 24px;
   }
-  .flowertwo{
-    max-height: 100%;
-    max-width: 100%;
+  .B{
     position: absolute;
-    width: 29px;
-    height: 42px;
-    z-index: 1;
-    margin-left: 143px;
-    margin-top: 607px;
-    display: none;
+    margin-top: 434px;
+    margin-left: 49px;
   }
-  .flowerthree{
-    max-height: 100%;
-    max-width: 100%;
+  .C{
     position: absolute;
-    width: 29px;
-    height: 42px;
-    z-index: 1;
-    margin-left: 176px;
-    margin-top: 607px;
-    display: none;
+    margin-top: 434px;
+    margin-left: 74px;
   }
-  .flowerfour{
-    max-height: 100%;
-    max-width: 100%;
+  .D{
     position: absolute;
-    width: 29px;
-    height: 42px;
-    z-index: 1;
-    margin-left: 209px;
-    margin-top: 607px;
-    display: none;
+    margin-top: 434px;
+    margin-left: 99px;
   }
-  .flowerfive{
-    max-height: 100%;
-    max-width: 100%;
+  .E{
     position: absolute;
-    width: 29px;
-    height: 42px;
-    z-index: 1;
-    margin-left: 242px;
-    margin-top: 607px;
-    display: none;
+    margin-top: 434px;
+    margin-left: 124px;
+  }
+  .F{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 149px;
+  }
+  .G{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 174px;
+  }
+  .H{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 199px;
+  }
+  .I{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 224px;
+  }
+  .J{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 249px;
+  }
+  .K{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 274px;
+  }
+  .L{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 299px;
+  }
+  .M{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 324px;
+  }
+  .N{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 24px;
+  }
+  .O{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 49px;
+  }
+  .P{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 74px;
+  }
+  .Q{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 99px;
+  }
+  .R{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 124px;
+  }
+  .S{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 149px;
+  }
+  .T{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 174px;
+  }
+  .U{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 199px;
+  }
+  .V{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 224px;
+  }
+  .W{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 249px;
+  }
+  .X{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 274px;
+  }
+  .Y{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 299px;
+  }
+  .Z{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 324px;
+  }
+  .otherone{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 24px;
+  }
+  .othertwo{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 49px;
+  }
+  .otherthree{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 74px;
+  }
+  .otherfour{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 99px;
   }
 
-
-
-
-  /*2-3*/
-  .movinghand img{
-    width: 36px;
-    height: 58px;
-    margin-top: 416px;
-    margin-left: 176px;
+  .space{
+    position: absolute;
+    width: 55.85px;
+    height: 22px;
+    margin-top: 486px;
+    margin-left: 224px;
+  }
+  .enter{
+    position: absolute;
+    width: 28.77px;
+    height: 22px;
+    margin-top: 486px;
+    margin-left: 284px;
+  }
+  .delete{
+    position: absolute;
+    width: 28.77px;
+    height: 22px;
+    margin-top: 486px;
+    margin-left: 317px;
   }
 
-
-
-  /*2-4*/
   
-
- 
-
-
-
-  /*2-4-1*/
-  .kidsit{
-    width: 375px;
-    height: 375px;
-  }
-
-  .kidturn{
-    display: none;
-    width: 375px;
-    height: 375px;
-  }
-
-  .mobile img{
-    width: 28px;
-    height: 19px;
-    margin-left: 119px;
-    margin-top: 463px;
-  }
-
-
-  /*2-5*/
-
-  .roomanimation img{
-    max-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-  }
-
-  .jellyfish img{
-    width: 375px;
-    height: 83.33px;
-    margin-top: 593px;
-  }
-
+  /*4-3*/
   
-  /*2-6*/
+  /*4-4*/
+  
+  /*4-5*/
 
-  .buttoncapsulespeak{
-    display: none;
-  }
+  /*4-6*/
 
+  /*4-7*/
+  
+  /*4-8*/
+  
+  /* 4-9 */
 
+  /* 4-10 */
 
-
-
-
-
-
-
-
-
-
-
-  /*1-12*/
-  .comettohome img{
-    max-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-  }
-
-
-  /*1-13*/
-  .flickerball img{
-    max-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-  }
-
-
-
-
-
-
-
+  /* 4-11 */
