@@ -1,0 +1,683 @@
+.character{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    width: 375px;
+    height: 520px;
+  }
+  .char{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+  }
+  .A{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 24px;
+  }
+  .B{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 49px;
+  }
+  .C{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 74px;
+  }
+  .D{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 99px;
+  }
+  .E{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 124px;
+  }
+  .F{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 149px;
+  }
+  .G{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 174px;
+  }
+  .H{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 199px;
+  }
+  .I{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 224px;
+  }
+  .J{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 249px;
+  }
+  .K{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 274px;
+  }
+  .L{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 299px;
+  }
+  .M{
+    position: absolute;
+    margin-top: 434px;
+    margin-left: 324px;
+  }
+  .N{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 24px;
+  }
+  .O{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 49px;
+  }
+  .P{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 74px;
+  }
+  .Q{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 99px;
+  }
+  .R{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 124px;
+  }
+  .S{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 149px;
+  }
+  .T{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 174px;
+  }
+  .U{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 199px;
+  }
+  .V{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 224px;
+  }
+  .W{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 249px;
+  }
+  .X{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 274px;
+  }
+  .Y{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 299px;
+  }
+  .Z{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 324px;
+  }
+  .otherone{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 24px;
+  }
+  .othertwo{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 49px;
+  }
+  .otherthree{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 74px;
+  }
+  .otherfour{
+    position: absolute;
+    margin-top: 486px;
+    margin-left: 99px;
+  }
+
+  .space{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 2;
+    position: absolute;
+    width: 55.85px;
+    height: 22px;
+    margin-top: 486px;
+    margin-left: 224px;
+  }
+  .enter{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 2;
+    position: absolute;
+    width: 28.77px;
+    height: 22px;
+    margin-top: 486px;
+    margin-left: 284px;
+  }
+  .delete{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 2;
+    position: absolute;
+    width: 28.77px;
+    height: 22px;
+    margin-top: 486px;
+    margin-left: 317px;
+  }
+
+  .print{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    width: 375px;
+    height: 375px;
+  }
+  .printword img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
+  }
+  #A0_0{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 46px;
+  }
+  #A0_1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 72px;
+  }
+  #A0_2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 98px;
+  }
+  #A0_3{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 124px;
+  }
+  #A0_4{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 150px;
+  }
+  #A0_5{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 176px;
+  }
+  #A0_6{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 202px;
+  }
+  #A0_7{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 228px;
+  }
+  #A0_8{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 254px;
+  }
+  #A0_9{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 280px;
+  }
+  #A0_10{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 104px;
+    margin-left: 306px;
+  }
+  #A1_0{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 46px;
+  }
+  #A1_1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 72px;
+  }
+  #A1_2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 98px;
+  }
+  #A1_3{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 124px;
+  }
+  #A1_4{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 150px;
+  }
+  #A1_5{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 176px;
+  }
+  #A1_6{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 202px;
+  }
+  #A1_7{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 228px;
+  }
+  #A1_8{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 254px;
+  }
+  #A1_9{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 280px;
+  }
+  #A1_10{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 129px;
+    margin-left: 306px;
+  }
+  #A2_0{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 46px;
+  }
+  #A2_1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 72px;
+  }
+  #A2_2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 98px;
+  }
+  #A2_3{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 124px;
+  }
+  #A2_4{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 150px;
+  }
+  #A2_5{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 176px;
+  }
+  #A2_6{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 202px;
+  }
+  #A2_7{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 228px;
+  }
+  #A2_8{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 254px;
+  }
+  #A2_9{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 280px;
+  }
+  #A2_10{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 154px;
+    margin-left: 306px;
+  }
+  #A3_0{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 46px;
+  }
+  #A3_1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 72px;
+  }
+  #A3_2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 98px;
+  }
+  #A3_3{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 124px;
+  }
+  #A3_4{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 150px;
+  }
+  #A3_5{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 176px;
+  }
+  #A3_6{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 202px;
+  }
+  #A3_7{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 228px;
+  }
+  #A3_8{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 254px;
+  }
+  #A3_9{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 280px;
+  }
+  #A3_10{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 179px;
+    margin-left: 306px;
+  }
+  #A4_0{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 46px;
+  }
+  #A4_1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 72px;
+  }
+  #A4_2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 98px;
+  }
+  #A4_3{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 124px;
+  }
+  #A4_4{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 150px;
+  }
+  #A4_5{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 176px;
+  }
+  #A4_6{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 202px;
+  }
+  #A4_7{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 228px;
+  }
+  #A4_8{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 254px;
+  }
+  #A4_9{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 280px;
+  }
+  #A4_10{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 204px;
+    margin-left: 306px;
+  }
+  #A5_0{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 46px;
+  }
+  #A5_1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 72px;
+  }
+  #A5_2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 98px;
+  }
+  #A5_3{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 124px;
+  }
+  #A5_4{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 150px;
+  }
+  #A5_5{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 176px;
+  }
+  #A5_6{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 202px;
+  }
+  #A5_7{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 228px;
+  }
+  #A5_8{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 254px;
+  }
+  #A5_9{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 280px;
+  }
+  #A5_10{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 229px;
+    margin-left: 306px;
+  }

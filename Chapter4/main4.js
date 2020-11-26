@@ -16,15 +16,12 @@ function subSomething(){
 }
 
 /*4-1*/
-
 function changepages(){
   document.getElementById("4-2").style.display = "block";
   document.getElementById("4-1").style.display = "none";
 }
 
 /*4-2*/ 
-
-
 function changepagesthree() {
   document.getElementById("4-3").style.display = "block";
   document.getElementById("4-2").style.display = "none";
