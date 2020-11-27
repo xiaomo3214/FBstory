@@ -44,7 +44,6 @@ body{
 /*4-5*/
 .fifthpage{
   display: none;
-
 }
 
 /*4-6*/
@@ -78,8 +77,7 @@ body{
 }
 
 
-
-/*loading*/
+/*loading new*/
 .ani_peanut{
   max-width: 100%;
   max-height: 100%;
@@ -191,7 +189,19 @@ body{
   
   /*4-4*/
   
-  /*4-5*/
+  /*4-5 new*/
+  .capsulecircle{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    margin: auto;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
   /*4-6*/
 

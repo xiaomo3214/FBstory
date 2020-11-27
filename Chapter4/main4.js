@@ -19,9 +19,15 @@ function subSomething(){
 function changepages(){
   document.getElementById("4-2").style.display = "block";
   document.getElementById("4-1").style.display = "none";
+  setTimeout("changeGIF()",4000);
 }
 
 /*4-2*/ 
+function changeGIF(){
+  console.log("A");
+  document.getElementById('bg1').src = "images/Chap4/4-2/4_2_bg_gif_02.gif"
+}
+
 function changepagesthree() {
   document.getElementById("4-3").style.display = "block";
   document.getElementById("4-2").style.display = "none";

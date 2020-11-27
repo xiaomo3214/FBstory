@@ -213,18 +213,16 @@
     width: 375px;
     height: 375px;
   }
-  .printword img{
-    max-width: 100%;
-    max-height: 100%;
-    width: 22px;
-    height: 22px;
-  }
   #A0_0{
     display: none;
     position: absolute;
     z-index: 1;
     margin-top: 104px;
     margin-left: 46px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_1{
     display: none;
@@ -232,6 +230,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 72px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_2{
     display: none;
@@ -239,6 +241,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 98px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_3{
     display: none;
@@ -246,6 +252,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 124px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_4{
     display: none;
@@ -253,6 +263,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_5{
     display: none;
@@ -260,6 +274,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 176px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_6{
     display: none;
@@ -267,6 +285,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 202px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_7{
     display: none;
@@ -274,6 +296,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 228px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_8{
     display: none;
@@ -281,6 +307,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 254px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_9{
     display: none;
@@ -288,6 +318,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A0_10{
     display: none;
@@ -295,6 +329,10 @@
     z-index: 1;
     margin-top: 104px;
     margin-left: 306px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_0{
     display: none;
@@ -302,6 +340,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 46px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_1{
     display: none;
@@ -309,6 +351,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 72px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_2{
     display: none;
@@ -316,6 +362,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 98px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_3{
     display: none;
@@ -323,6 +373,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 124px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_4{
     display: none;
@@ -330,6 +384,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_5{
     display: none;
@@ -337,6 +395,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 176px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_6{
     display: none;
@@ -344,6 +406,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 202px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_7{
     display: none;
@@ -351,6 +417,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 228px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_8{
     display: none;
@@ -358,6 +428,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 254px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_9{
     display: none;
@@ -365,6 +439,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A1_10{
     display: none;
@@ -372,6 +450,10 @@
     z-index: 1;
     margin-top: 129px;
     margin-left: 306px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_0{
     display: none;
@@ -379,6 +461,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 46px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_1{
     display: none;
@@ -386,6 +472,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 72px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_2{
     display: none;
@@ -393,6 +483,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 98px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_3{
     display: none;
@@ -400,6 +494,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 124px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_4{
     display: none;
@@ -407,6 +505,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_5{
     display: none;
@@ -414,6 +516,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 176px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_6{
     display: none;
@@ -421,6 +527,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 202px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_7{
     display: none;
@@ -428,6 +538,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 228px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_8{
     display: none;
@@ -435,6 +549,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 254px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_9{
     display: none;
@@ -442,6 +560,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A2_10{
     display: none;
@@ -449,6 +571,10 @@
     z-index: 1;
     margin-top: 154px;
     margin-left: 306px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_0{
     display: none;
@@ -456,6 +582,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 46px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_1{
     display: none;
@@ -463,6 +593,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 72px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_2{
     display: none;
@@ -470,6 +604,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 98px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_3{
     display: none;
@@ -477,6 +615,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 124px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_4{
     display: none;
@@ -484,6 +626,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_5{
     display: none;
@@ -491,6 +637,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 176px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_6{
     display: none;
@@ -498,6 +648,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 202px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_7{
     display: none;
@@ -505,6 +659,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 228px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_8{
     display: none;
@@ -512,6 +670,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 254px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_9{
     display: none;
@@ -519,6 +681,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A3_10{
     display: none;
@@ -526,6 +692,10 @@
     z-index: 1;
     margin-top: 179px;
     margin-left: 306px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_0{
     display: none;
@@ -533,6 +703,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 46px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_1{
     display: none;
@@ -540,6 +714,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 72px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_2{
     display: none;
@@ -547,6 +725,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 98px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_3{
     display: none;
@@ -554,6 +736,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 124px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_4{
     display: none;
@@ -561,6 +747,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_5{
     display: none;
@@ -568,6 +758,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 176px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_6{
     display: none;
@@ -575,6 +769,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 202px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_7{
     display: none;
@@ -582,6 +780,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 228px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_8{
     display: none;
@@ -589,6 +791,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 254px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_9{
     display: none;
@@ -596,6 +802,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A4_10{
     display: none;
@@ -603,6 +813,10 @@
     z-index: 1;
     margin-top: 204px;
     margin-left: 306px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_0{
     display: none;
@@ -610,6 +824,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 46px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_1{
     display: none;
@@ -617,6 +835,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 72px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_2{
     display: none;
@@ -624,6 +846,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 98px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_3{
     display: none;
@@ -631,6 +857,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 124px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_4{
     display: none;
@@ -638,6 +868,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_5{
     display: none;
@@ -645,6 +879,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 176px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_6{
     display: none;
@@ -652,6 +890,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 202px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_7{
     display: none;
@@ -659,6 +901,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 228px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_8{
     display: none;
@@ -666,6 +912,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 254px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_9{
     display: none;
@@ -673,6 +923,10 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
   #A5_10{
     display: none;
@@ -680,4 +934,8 @@
     z-index: 1;
     margin-top: 229px;
     margin-left: 306px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 22px;
+    height: 22px;
   }
