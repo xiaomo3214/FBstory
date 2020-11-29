@@ -187,27 +187,27 @@ canvas.addEventListener("touchstart", function (event) {
     canvasTop = Math.floor(rect.top);   // 操作區域的左上角距離視窗上邊的距離 
     var x = touch.pageX - canvasLeft;
     var y = touch.pageY - canvasTop;
-    // if (x >= 0 & x <= 325 && y >= 0 && y <= 325) { // 點在操作範圍內
+    if (x >= 0 & x <= 325 && y >= 0 && y <= 325) { // 點在操作範圍內
         particles.forEach((p) => { p.touchDown(touch.pageX  - canvasLeft, touch.pageY  - canvasTop) });
         flag = true;
-    // }
+    }
     // console.log("window", event.x, canvasLeft);
 });
 
 //移動
-window.addEventListener("touchmove", function (event) {
+canvas.addEventListener("touchmove", function (event) {
     // event.preventDefault();
     var touch = event.targetTouches[0];
     if (flag) { // 滑鼠有被按下才需要處理
         var x = touch.pageX - canvasLeft;
         var y = touch.pageY - canvasTop;
-        // if (x >= 0 & x <= 325 && y >= 0 && y <= 325) {// 點在操作範圍內
+        if (x >= 0 & x <= 325 && y >= 0 && y <= 325) {// 點在操作範圍內
             particles.forEach((p) => { p.touchDown(touch.pageX - canvasLeft, touch.pageY - canvasTop) });
-        // }
-        // else { // 滑鼠移除範圍外，則取消相關的狀態
-        //     particles.forEach((p) => { p.touchUp(); });
-        //     flag = false;
-        // }
+        }
+        else { // 滑鼠移除範圍外，則取消相關的狀態
+            particles.forEach((p) => { p.touchUp(); });
+            flag = false;
+        }
     }
 });
 

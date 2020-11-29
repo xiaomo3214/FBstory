@@ -24,7 +24,7 @@ function changepages(){
 
 /*4-2*/ 
 function changeGIF(){
-  console.log("A");
+  // console.log("A");
   document.getElementById('bg1').src = "images/Chap4/4-2/4_2_bg_gif_02.gif"
 }
 
