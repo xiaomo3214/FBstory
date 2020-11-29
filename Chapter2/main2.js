@@ -25,12 +25,13 @@ function subSomething(){
   }
 }
 
-/*2-1*/
+/*2-1  NEW*/
+var touchTime = 0, stopAni = 0, playAniTime = 100; //newupdate
 var bg = $(".starry");  //背景
 var aa = $(".view");
 var obj = document.querySelector(".view");  //控制觸控
 var touchSpeed = 1000;
-var startX1 = endX1 = 0;
+var startX1 = endX1 = 0; //newupdate
 
 if(obj) {
   wetherScroll();
@@ -46,14 +47,22 @@ function mouseEvent(){
   obj.addEventListener('mousedown',function(event){
       event.preventDefault();
       // mouse = true;
+      if(sec >= num) {
+        //newupdate
+        touchTime++;
+        if(touchTime == 1){
+            ani = setInterval(animator,10);
+        }
+      }
+      //newupdate
       startX1 = event.screenX;
   }, false);
   obj.addEventListener('mousemove',function(event){
       event.preventDefault();
       var pos1 = bg.offset();
-      endX = event.screenX;
-      var distanceX = (endX - startX1);
-      if(startX1!=Math.abs(distanceX) && event.buttons == 1){
+      endX1 = event.screenX;  //newupdate
+      var distanceX = (endX1 - startX1);  //newupdate
+      if(startX1!=Math.abs(distanceX) && event.buttons == 1 && stopAni>playAniTime){  //newupdate
               if(distanceX<0){
                   if(bg.position().left+distanceX*((bg.width()-aa.width())/touchSpeed)>(-bg.width() + aa.width())
                     && bg.position().top+distanceX*((bg.height()-aa.height())/touchSpeed)>(-bg.height() + aa.height())){
@@ -67,13 +76,13 @@ function mouseEvent(){
                       bg.offset({top:pos1.top+distanceX*((bg.height()+aa.height())/touchSpeed)});
                     }
               }
-          startX1 = endX;
+          startX1 = endX1;  //newupdate
       }
   });
   obj.addEventListener('mouseup',function(event){
       event.preventDefault();
       // mouse = false;
-      startX1 = endX = 0;
+      startX1 = endX1 = 0;  //newupdate
   }, false);
 }
 
@@ -86,15 +95,23 @@ function wetherScroll(){
   obj.addEventListener('touchstart',function(event){
       // event.preventDefault();
       var touch = event.targetTouches[0];
+      //newupdate
+      if(sec >= num) {
+        touchTime++;
+        if(touchTime == 1){
+            ani = setInterval(animator,10);
+        }
+      }
+      //newupdate
       startX1 = touch.screenX;
   }, false);
   obj.addEventListener('touchmove',function(event){
       // event.preventDefault();
       var pos1 = bg.offset();
       var touch = event.targetTouches[0];
-      endX = touch.screenX;
-      var distanceX = (endX - startX1);
-      if(startX1!=Math.abs(distanceX)){
+      endX1 = touch.screenX;  //newupdate
+      var distanceX = (endX1 - startX1);  //newupdate
+      if(startX1!=Math.abs(distanceX) && stopAni>playAniTime){  //newupdate
         if(distanceX<0){
           if(bg.position().left+distanceX*((bg.width()-aa.width())/touchSpeed)>(-bg.width() + aa.width())
             && bg.position().top+distanceX*((bg.height()-aa.height())/touchSpeed)>(-bg.height() + aa.height())){
@@ -108,14 +125,24 @@ function wetherScroll(){
             bg.offset({top:pos1.top+distanceX*((bg.height()+aa.height())/touchSpeed)});
           }
         }
-        startX1 = endX;
+        startX1 = endX1; //newupdate
       }
   });
   obj.addEventListener('touchend',function(event){
       // event.preventDefault();
-      startX1 = endX = 0;
+      startX1 = endX1 = 0; //newupdate
   }, false);
 }
+
+//newupdate
+function animator(){
+  if(stopAni>playAniTime) clearInterval(ani);
+  var pos1 = bg.offset();
+  bg.offset({left:pos1.left-((bg.width()-aa.width())/touchSpeed)});
+  bg.offset({top:pos1.top-((bg.height()+aa.height())/touchSpeed)});
+  stopAni++;
+}
+//newupdate
 
 function changepages() {
   document.getElementById("2-2").style.display = "block";
@@ -180,23 +207,32 @@ function changepagesback() {
 
 
 
-/*2-3*/
+/*2-3  NEW*/
 var hand = $(".movinghand");
 var startX3 = startY3 = endX3 = endY3 = 0;
-var dragrange = $(".range");
 var mouse3 = false;
+var movehand = document.querySelector("#movinghand");  //newupdate
 
 if(hand){
   mouseHand();
   touchHand();
 }
+
 function mouseHand(){
+
+  //newupdate  window裡的mouse3拿掉 新增movehand的mousedown函式
   window.addEventListener('mousedown',function(event){
     event.preventDefault(); //防止預設觸控事件
     startX3 = event.screenX;
     startY3 = event.screenY;
+  }, {passive: false});
+
+  movehand.addEventListener('mousedown',function(event){
+    event.preventDefault(); //防止預設觸控事件
     mouse3=true;
   }, {passive: false});
+  //newupdate
+
   window.addEventListener('mousemove',function(event){
     // event.preventDefault();
     var pos1 = hand.offset();
@@ -231,12 +267,14 @@ function mouseHand(){
 
 
 function touchHand(){
-  window.addEventListener('touchstart',function(event){
+
+  //newupdate 所有的window改成movehand
+  movehand.addEventListener('touchstart',function(event){
     var touch = event.targetTouches[0];
     startX_5 = touch.screenX;
     startY_5 = touch.screenY;
   }, false);
-  window.addEventListener('touchmove',function(event){
+  movehand.addEventListener('touchmove',function(event){
     var touch = event.targetTouches[0];
     var pos1 = hand.offset();
     endX3 = touch.screenX;
@@ -260,9 +298,10 @@ function touchHand(){
       startY3 = endY3;
     }
   });
-  window.addEventListener('touchend',function(event){
+  movehand.addEventListener('touchend',function(event){
     startX3 = startY3 = endX3 = endY3 = 0;
   }, false);
+  //newupdate
 }
 
 

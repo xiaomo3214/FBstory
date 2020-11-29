@@ -323,7 +323,7 @@ body{
   }
 
 
-  /*2-3*/
+  /*2-3  newupdate  刪掉range*/
   .maincorner{
     max-height: 100%;
     max-width: 100%;
@@ -338,28 +338,15 @@ body{
     z-index: 1;
   }
   .movinghand{
+    max-width: 100%;
+    max-height: 100%;
     width: 36px;
     height: 58px;
     position: absolute;
-    margin-top: 8px;
-    margin-left: 36px;
+    margin-top: 198px;
+    margin-left: 176px;
   }
-
-  .range{
-    display: block;
-    width: 70px;
-    height: 65px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    margin-top: 190px;
-    margin-left: 140px;
-  }
-
+  
   .hand_prepage{
     position: absolute;
     width: 40px;
@@ -369,7 +356,7 @@ body{
     margin: auto;
     z-index: 5;
   }
-
+  
   .hand_nextpage{
     position: absolute;
     width: 40px;

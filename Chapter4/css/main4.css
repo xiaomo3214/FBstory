@@ -190,7 +190,7 @@ body{
   /*4-4*/
   
   /*4-5 new*/
-  .capsulecircle{
+  .capsule{
     max-width: 100%;
     max-height: 100%;
     position: absolute;
@@ -201,6 +201,18 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
+  }
+  #canvas{
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      margin: auto;
+      width: 325px;
+      height: 325px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
   }
 
   /*4-6*/
