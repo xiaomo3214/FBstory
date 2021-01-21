@@ -1,0 +1,314 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/main3.css">
+
+    <title>Chapter3</title>
+  </head>
+  <body onclick="playmusic()">
+    <!-- loading -->
+    <div class="loading" id="cover">
+      <div class="background">
+        <img src="images/Chap3/cover/Animation_3.gif">
+      </div>
+    </div>
+    <!--3-1-->
+    <div class="mainpage" id="3-1">
+      <div class="background">
+        <audio id="bgm" src="Music/BGM_CH3_01.mp3"></audio>
+        <img src="images/Chap3/3-1/3_1.png" alt="">
+        <div class="allpeanuts">
+          <div class="droppeanut1" id="nut1">
+            <img src="images/Chap3/3-1/peanut1.png" alt="">
+          </div>
+          <div class="droppeanut2" id="nut2">
+            <img src="images/Chap3/3-1/peanut2.png" alt="">
+          </div>
+          <div class="droppeanut3" id="nut3">
+            <img src="images/Chap3/3-1/peanut3.png" alt="">
+          </div>
+          <div class="droppeanut4" id="nut4">
+            <img src="images/Chap3/3-1/peanut4.png" alt="">
+          </div>
+          <div class="droppeanut5" id="nut5">
+            <img src="images/Chap3/3-1/peanut5.png" alt="">
+          </div>
+          <div class="droppeanut6" id="nut6">
+            <img src="images/Chap3/3-1/peanut6.png" alt="">
+          </div>
+          <div class="droppeanut7" id="nut7">
+            <img src="images/Chap3/3-1/peanut7.png" alt="">
+          </div>
+          <div class="droppeanut8" id="nut8">
+            <img src="images/Chap3/3-1/peanut8.png" alt="">
+          </div>
+          <!--changepage-->
+          <div class="peanut_changepage" id="nextpage1" onclick="changepages()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--3-2-->
+    <div class="secondpage" id="3-2">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesback()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="button">
+          <div class="boyandpeanutanimation">
+            <img src="images/Chap3/3-2/3_2.gif" alt="">
+          </div>
+        
+          <!-- <div class="light" id="light" onclick="transparentlight()">
+            <img src="images/chap1/1-3/1_3_light.png" alt="">
+          </div> -->
+          <!-- <div class="outside" id="outside" onclick="transparentoutside()">
+            <img src="images/chap1/1-3/1_3_bg01.png" alt="">
+          </div> -->
+          <!--changepage-->
+          <div class="buttonnextfix" id="nextpage2">
+            <div class="changepage" id="pages" onclick="changepagesthree()">
+              <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+            </div>
+          </div>
+          <!-- <input id="light" type="button" style="background-image: url(https://imgur.com/utyfPA1); " onclick="transparentlight();">
+          <input id="outside" type="button" style="background-image: url(https://imgur.com/n9aSGmK); " onclick="transparentoutside();"> -->
+        </div>
+      </div>
+    </div>
+
+    <!--3-3-->
+    <div class="thirdpage" id="3-3">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesbacktwo()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="blueone" id="blueone" onclick="bluetowhite()">
+          <img src="images/Chap3/3-3/3_3_blue.png" alt="">
+        </div>
+        <div class="whiteone" id="whiteone" onclick="whitetoblue()">
+          <img src="images/Chap3/3-3/3_3_white.png" alt="">
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix" id="nextpage3">
+          <div class="changepage" id="pages" onclick="changepagesfour()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fourthpage" id="3-4">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix" id="prepage4">
+          <div class="changepageback" id="pages" onclick="changepagesbackthree()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="button1">
+          <!-- <div class="peanuts" id="peanuts">
+            <div class="peanutone" id="peanutone">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut01.png" alt="">
+            </div>
+            <div class="peanuttwo" id="peanuttwo">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut02.png" alt="">
+            </div>
+            <div class="peanutthree" id="peanutthree">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut04.png" alt="">
+            </div>
+            <div class="peanutfour" id="peanutfour">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut03.png" alt="">
+            </div>
+            <div class="peanutfive" id="peanutfive">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut.png" alt="">
+            </div>
+          </div> -->
+          <div class="bullypicture" id="bullypicture">
+            <div class="bullyone" id="bullyone" onclick="peanutone()">
+              <img src="images/Chap3/3-4/bully_nocolor/3_4_pic1_nocolor.png" alt="">
+            </div>
+            <div class="bullytwo" id="bullytwo" onclick="peanuttwo()">
+              <img src="images/Chap3/3-4/bully_nocolor/3_4_pic2_nocolor.png" alt="">
+            </div>
+            <div class="bullythree" id="bullythree" onclick="peanutthree()">
+              <img src="images/Chap3/3-4/bully_nocolor/3_4_pic3_nocolor.png" alt="">
+            </div>
+            <div class="bullyfour" id="bullyfour" onclick="peanutfour()">
+              <img src="images/Chap3/3-4/bully_nocolor/3_4_pic4_nocolor.png" alt="">
+            </div>
+            <div class="bullyfive" id="bullyfive">
+              <img src="images/Chap3/3-4/bully_nocolor/3_4_pic5_nocolor.png" alt="">
+            </div>
+            <div class="peanutone" id="peanutone">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut01.png" alt="">
+            </div>
+            <div class="peanuttwo" id="peanuttwo">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut02.png" alt="">
+            </div>
+            <div class="peanutthree" id="peanutthree">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut04.png" alt="">
+            </div>
+            <div class="peanutfour" id="peanutfour">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut03.png" alt="">
+            </div>
+            <div class="peanutfive" id="peanutfive">
+              <img src="images/Chap3/3-4/peanut/3_4_peanut.png" alt="" id="pea">
+            </div>
+          </div>
+          <div class="bullypicturechoose" id="bullypicturechoose">
+            <div class="bullypicturechooseone" id="bullypicturechooseone">
+              <img src="images/Chap3/3-4/bully/3_4_pic1.png" alt="">
+              <div class="littlebutton">
+                <div class="close" id="closeone" onclick="closeone()">
+                  <img src="images/Chap3/3-4/3_4_exit.png" alt="">
+                </div>
+                <div class="unlike" id="unlikeone" onclick="likeone()">
+                  <img src="images/Chap3/3-4/3_4_heart_nocolor.png" alt="">
+                </div>
+                <div class="unshare" id="unshareone" onclick="shareone()">
+                  <img src="images/Chap3/3-4/3_4_share_nocolor.png" alt="">
+                </div>
+                <div class="like" id="likeone">
+                  <img src="images/Chap3/3-4/3_4_heart.png" alt="">
+                </div>
+                <div class="share" id="shareone">
+                  <img src="images/Chap3/3-4/3_4_share.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bullypicturechoosetwo" id="bullypicturechoosetwo">
+              <img src="images/Chap3/3-4/bully/3_4_pic2.png" alt="">
+              <div class="littlebutton">
+                <div class="close" id="closetwo" onclick="closetwo()">
+                  <img src="images/Chap3/3-4/3_4_exit.png" alt="">
+                </div>
+                <div class="unlike" id="unliketwo" onclick="liketwo()">
+                  <img src="images/Chap3/3-4/3_4_heart_nocolor.png" alt="">
+                </div>
+                <div class="unshare" id="unsharetwo" onclick="sharetwo()">
+                  <img src="images/Chap3/3-4/3_4_share_nocolor.png" alt="">
+                </div>
+                <div class="like" id="liketwo">
+                  <img src="images/Chap3/3-4/3_4_heart.png" alt="">
+                </div>
+                <div class="share" id="sharetwo">
+                  <img src="images/Chap3/3-4/3_4_share.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bullypicturechoosethree" id="bullypicturechoosethree">
+              <img src="images/Chap3/3-4/bully/3_4_pic3.png" alt="">
+              <div class="littlebutton">
+                <div class="close" id="closethree" onclick="closethree()">
+                  <img src="images/Chap3/3-4/3_4_exit.png" alt="">
+                </div>
+                <div class="unlike" id="unlikethree" onclick="likethree()">
+                  <img src="images/Chap3/3-4/3_4_heart_nocolor.png" alt="">
+                </div>
+                <div class="unshare" id="unsharethree" onclick="sharethree()">
+                  <img src="images/Chap3/3-4/3_4_share_nocolor.png" alt="">
+                </div>
+                <div class="like" id="likethree">
+                  <img src="images/Chap3/3-4/3_4_heart.png" alt="">
+                </div>
+                <div class="share" id="sharethree">
+                  <img src="images/Chap3/3-4/3_4_share.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bullypicturechoosefour" id="bullypicturechoosefour">
+              <img src="images/Chap3/3-4/bully/3_4_pic4.png" alt="">
+              <div class="littlebutton">
+                <div class="close" id="closefour" onclick="closefour()">
+                  <img src="images/Chap3/3-4/3_4_exit.png" alt="">
+                </div>
+                <div class="unlike" id="unlikefour" onclick="likefour()">
+                  <img src="images/Chap3/3-4/3_4_heart_nocolor.png" alt="">
+                </div>
+                <div class="unshare" id="unsharefour" onclick="sharefour()">
+                  <img src="images/Chap3/3-4/3_4_share_nocolor.png" alt="">
+                </div>
+                <div class="like" id="likefour">
+                  <img src="images/Chap3/3-4/3_4_heart.png" alt="">
+                </div>
+                <div class="share" id="sharefour">
+                  <img src="images/Chap3/3-4/3_4_share.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bullypicturechoosefive" id="bullypicturechoosefive">
+              <img src="images/Chap3/3-4/bully/3_4_pic5.png" alt="">
+              <div class="littlebutton">
+                <div class="close" id="closefive" onclick="closefive()">
+                  <img src="images/Chap3/3-4/3_4_exit.png" alt="">
+                </div>
+                <div class="unlike" id="unlikefive" onclick="likefive()">
+                  <img src="images/Chap3/3-4/3_4_heart_nocolor.png" alt="">
+                </div>
+                <div class="unshare" id="unsharefive" onclick="sharefive()">
+                  <img src="images/Chap3/3-4/3_4_share_nocolor.png" alt="">
+                </div>
+                <div class="like" id="likefive">
+                  <img src="images/Chap3/3-4/3_4_heart.png" alt="">
+                </div>
+                <div class="share" id="sharefive">
+                  <img src="images/Chap3/3-4/3_4_share.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--changepage-->
+          <div class="buttonnextfix" id="nextpage4">
+            <div class="changepage" id="pages" onclick="changepagesfive()">
+              <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--3-5-->
+    <div class="fifthpage" id="3-5">
+      <div class="background">
+        <!--changepage-->
+        <div class="buttonpreviousfix">
+          <div class="changepageback" id="pages" onclick="changepagesbackfourone()">
+            <img src="images/Page_change/Page_previous/preced_white/previouspage_white.gif" alt="">
+          </div>
+        </div>
+        <div class="ani_peanut">
+          <div class="bigpeanut">
+            <img src="images/Chap3/3-5/3_5_peanut.png">
+          </div>
+        </div>
+        <!--changepage-->
+        <div class="buttonnextfix" id="nextpage5">
+          <a href="../chap4/index.html"><div class="changepage" id="pages" onclick="changepagessix()">
+            <img src="images/Page_change/Page_next/Page_next_white/nextpage_white.gif" alt="">
+          </div></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="main3.js"></script>
+    <script src="js/3-1.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>

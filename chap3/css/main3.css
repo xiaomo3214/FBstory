@@ -1,0 +1,590 @@
+/*設定的座標位置是 left:50%; 和 top:50%
+position:absolute; 是以 div 的左上角當作座標的計算點
+因此需加上margin修正*/
+/* xl - Extra large devices (large desktops, 1200px and up) */
+
+/*1-2*/
+body{
+  background-color: black;
+}
+
+/*切換下一頁*/
+/*.changepage img{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  width: 119px;
+  height: 115px;
+  z-index: 3;
+  margin-right: 420px;
+  margin-bottom: 15px;
+}
+*/
+
+.loading{
+  display: block;
+}
+/* 3-1 */
+.mainpage{
+  display: none;
+}
+
+/*3-2*/
+.secondpage{
+  display: none;
+}
+
+/*3-3*/
+.thirdpage{
+  display: none;
+}
+
+/*3-4*/
+.fourthpage{
+  display: none;
+}
+
+/*3-5*/
+.fifthpage{
+  display: none;
+}
+
+/*3-1*/
+  .mainpage{
+    width: 375px;
+    height: auto;
+  }
+
+  .background{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .background img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .allpeanuts{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 435px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .allpeanuts img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .droppeanut1{
+    width: 194px;
+    height: 117px;
+    margin: auto;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 108px;
+  }
+  .droppeanut2{
+    width: 177px;
+    height: 151px;
+    margin: auto;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 54px;
+  }
+  .droppeanut3{
+    width: 179px;
+    height: 153px;
+    margin: auto;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 178px;
+  }
+  .droppeanut4{
+    width: 165px;
+    height: 170px;
+    margin: auto;
+    position: absolute;
+    margin-top: 186px;
+    margin-left: 22px;
+  }
+  .droppeanut5{
+    width: 170px;
+    height: 163px;
+    margin: auto;
+    position: absolute;
+    margin-top: 102px;
+    margin-left: 62px;
+  }
+  .droppeanut6{
+    width: 198px;
+    height: 104px;
+    margin: auto;
+    position: absolute;
+    margin-top: 178px;
+    margin-left: 90px;
+  }
+  .droppeanut7{
+    width: 185px;
+    height: 144px;
+    margin: auto;
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 132px;
+  }
+  .droppeanut8{
+    width: 176px;
+    height: 160px;
+    margin: auto;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 92px;
+  }
+  .peanut_changepage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    bottom: 64.5px;
+    right: 35px;
+    margin: auto;
+    z-index: 5;
+  }
+  
+  .buttonnextfix{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  .changepage img{
+    position: absolute;
+    margin-top: 135px;
+    margin-right: 35px;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+  }
+  .buttonpreviousfix{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  .changepageback img{
+    position: absolute;
+    margin-top: -135px;
+    margin-left: 35px;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+  }
+
+  /*3-2*/
+  .outside{
+    z-index: 1;
+  }
+
+  #light{
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0);
+      max-height: 100%;
+      max-width: 100%;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+      z-index: 2;
+      width: 375px;
+      height: 375px;
+      background-size: cover;
+  }
+  #outside{
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0);
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    z-index: 2;
+    width: 375px;
+    height: 375px;
+    background-size: cover;
+  }
+ 
+
+  .flowers{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 812px;
+  }
+
+  .flowerone{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 110px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowertwo{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 143px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowerthree{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 176px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowerfour{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 209px;
+    margin-top: 607px;
+    display: none;
+  }
+  .flowerfive{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 29px;
+    height: 42px;
+    z-index: 1;
+    margin-left: 242px;
+    margin-top: 607px;
+    display: none;
+  }
+
+  /*3-3*/
+  .blueone{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .whiteone{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  /*3-4*/
+  .button1{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 666px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .bullypicture{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 666px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .bullyone img{
+    width: 375px;
+    height: 541.67px;
+  }
+  .bullytwo img{
+    width: 375px;
+    height: 541.67px;
+  }
+  .bullytwo{
+    display: none;
+  }
+  .bullythree img{
+    width: 375px;
+    height: 541.67px;
+  }
+  .bullythree{
+    display: none;
+  }
+  .bullyfour img{
+    width: 375px;
+    height: 541.67px;
+  }
+  .bullyfour{
+    display: none;
+  }
+  .bullyfive img{
+    width: 375px;
+    height: 541.67px;
+  }
+  .bullyfive{
+    display: none;
+  }
+
+  .peanuts{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 666px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .peanutone img{
+    width: 68px;
+    height: 47px;
+    margin-left: 245px;
+    margin-top: 375px;
+  }
+  .peanuttwo img{
+    width: 46.41px;
+    height: 68px;
+    margin-left: 240px;
+    margin-top: 435px;
+  }
+  .peanuttwo{
+    display: none;  
+  }
+  .peanutthree img{
+    width: 62.3px;
+    height: 48px;
+    margin-left: 95px;
+    margin-top: 478px;
+  }
+  .peanutthree{
+    display: none;
+  }
+  .peanutfour img{
+    width: 55px;
+    height: 55px;
+    margin-left: 157px;
+    margin-top: 224px;
+  }
+  .peanutfour{
+    display: none;
+  }
+  .peanutfive img{
+    width: 65px;
+    height: 104.27px;
+    margin-left: 147px;
+    margin-top: 211px;
+  }
+  .peanutfive{
+    display: none;
+  }
+
+  .bullypicturechoose{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .bullypicturechooseone img{
+    width: 375px;
+    height: 375px;
+  }
+  .bullypicturechoosetwo{
+    display: none;
+  }
+  .bullypicturechoosethree{
+    display: none;
+  }
+  .bullypicturechoosefour{
+    display: none;
+  }
+  .bullypicturechoosefive{
+    display: none;
+  }
+  
+
+  .littlebutton{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+  .close img{
+    width: 16px;
+    height: 15px;
+    margin-top: 86px;
+    margin-left: 326px;
+  }
+  .like img{
+    width: 28px;
+    height: 21px;
+    margin-top: 247px;
+    margin-left: 43px;
+  }
+  .like{
+    display: none;
+  }
+  .unlike img{
+    width: 42px;
+    height: 34px;
+    margin-top: 240px;
+    margin-left: 36px;
+  }
+  .share img{
+    width: 27px;
+    height: 20px;
+    margin-top: 247px;
+    margin-left: 308px;
+  }
+  .share{
+    display: none;
+  }
+  .unshare img{
+    width: 34px;
+    height: 32px;
+    margin-top: 241px;
+    margin-left: 306px;
+  }
+
+ 
+
+
+
+  /*3-5*/
+  .ani_peanut{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .bigpeanut{
+    width: 91px;
+    height: 250px;
+    /* position: absolute; */
+    margin: auto;
+    animation-name: fall,smallnut;
+    animation-duration:2.5s,2.5s; /*完成動畫所花費的時間*/
+    animation-timing-function: ease-in,ease-in;
+    animation-iteration-count:2,infinite; /*動畫應該播放的次數 infinite是無限循環*/
+    animation-delay:0s,5s;
+    animation-fill-mode:forwards,none;
+  }
+
+  @-webkit-keyframes fall {
+    0%{-webkit-transform:translateY(-100px);}
+    100%{-webkit-transform:translateY(375px);}
+  }
+  @-webkit-keyframes smallnut {
+    0%{-webkit-transform:translateY(-100px) scale(0.3);}
+    100%{-webkit-transform:translateY(375px) scale(0.3);}
+  }

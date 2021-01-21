@@ -1,0 +1,114 @@
+body{
+    background-color: black;
+}
+.tenthpage{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+}
+.background_m10{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    height: 315px;
+    width: 315px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.background_m10 img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    height: 315px;
+    width: 315px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.comet_10 img{
+    max-height: 100%;
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    z-index: 1;
+    transform-origin:right bottom;
+    animation: circle_10 5s 1 ease-in, circle2_10  5s 1 ease-out;
+    animation-fill-mode:forwards;
+}
+
+/* changepage */
+.nextpage_10 img{
+    position: absolute;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+}
+.prepage_10 img{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+}
+
+@keyframes circle_10 {
+    0% {top:-20%; transform: rotate(-20deg);}
+    100%  {top:150%; transform: rotate(85deg);}
+}
+@keyframes circle2_10 {
+    0% {left: -75%; }
+    100%  {left: 35%;}
+}
+
+/* .frame{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin: auto;
+    z-index: 1;
+}
+.up{
+    position: absolute;
+    top: -1%;
+    left: 0%;
+}
+.down{
+    position: absolute;
+    bottom: -1%;
+    right: 0%;
+}
+.left{
+    position: absolute;
+    left: -1%;
+    top: 0%;
+}
+.right{
+    position: absolute;
+    right: -1%;
+    bottom: 0%;
+} */

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Chapter1</title>
+        <link rel="stylesheet" href="./main/css/1-1.css">
+        <!-- jQuery -->
+        <script src="./main/js/jQuery.js"></script>
+    </head>
+    <body>
+        <div class="loading" id="cover">
+            <div class="background">
+              <img src="./main/img/Animations/Animation_1.gif">
+            </div>
+        </div>
+        <div class="outSide" id="1-1">
+            <div class="showArea" onclick="BGM();">
+                <audio src="./main/audio/mp3_320/BGM_CH1_01.mp3" id="player" loop preload="true"></audio>
+                <img src="./main/img/Chap1/1-1/1_1_04.png" alt="bg" class="img bg">
+                <img src="./main/img/Chap1/1-1/1_1_03.png" alt="three" class="img third">
+                <img src="./main/img/Chap1/1-1/1_1_02.png" alt="two" class="img sec">
+                <img  src="./main/img/Chap1/1-1/1_1_01.png" alt="one" class="img first">
+                <!--changepage-->
+                <div class="nextpage" id="nextPage" onclick="changepage()">
+                    <img src="./main/img/Page_change/Page_next/nextpage_white.gif">
+                </div>
+        <script src="./main/js/1-1_parallax.js"></script>
+    </body>
+</html>
+
+
+<!-- <div class="outSide">
+    <div class="showArea" onclick="BGM();">
+        <img src="./main/img/Animations/Animation_1.gif" class="img loading"> -->
+        <!-- <audio id="touchA" src="audio/Ch1_01_SE01_Chimes.wav" preload="true"></audio>
+        <audio id="nextAudio" src="audio/Ch1_01_SE03_NextPage.wav" preload="true"></audio>
+        <audio src="audio/BGM_CH1_01.wav" id="player" loop preload="true"></audio>
+        <audio id="touchA" src="audio/mp3_320/Ch1_01_SE01_Chimes.mp3" preload="true"></audio>
+        <audio id="nextAudio" src="audio/mp3_320/Ch1_01_SE03_NextPage.mp3" preload="true"></audio> -->
+        <!-- <audio src="./main/audio/mp3_320/BGM_CH1_01.mp3" id="player" loop preload="true"></audio>
+        <div class="hide">
+            <img  src="./main/img/Chap1/1-1/1_1_01.png" alt="one" class="img first">
+            <img src="./main/img/Chap1/1-1/1_1_02.png" alt="two" class="img sec">
+            <img src="./main/img/Chap1/1-1/1_1_03.png" alt="three" class="img third">
+            <img src="./main/img/Chap1/1-1/1_1_04.png" alt="bg" class="img bg">
+            <img src="./main/img/Page_change/Page_next/nextpage_white.gif" id="nextPage" onclick="changepage()">
+        </div>
+    </div>
+    <div class="cover"></div>
+</div> -->

@@ -1,0 +1,696 @@
+/*設定的座標位置是 left:50%; 和 top:50%
+position:absolute; 是以 div 的左上角當作座標的計算點
+因此需加上margin修正*/
+/* xl - Extra large devices (large desktops, 1200px and up) */
+
+/*1-2*/
+body{
+  background-color: black;
+}
+
+/*切換下一頁*/
+/*.changepage img{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  width: 119px;
+  height: 115px;
+  z-index: 3;
+  margin-right: 420px;
+  margin-bottom: 15px;
+}
+*/
+
+.onesecondpage{
+  display: none;
+}
+
+/* 4-1 */
+.mainpage{
+  display: none;
+}
+
+/*4-2*/
+.secondpage{
+  display: none;
+}
+
+
+
+/*4-3*/
+.thirdpage{
+  display: none;
+}
+
+/*4-4*/
+.fourthpage{
+  display: none;
+}
+
+/*4-5*/
+.fifthpage{
+  display: none;
+}
+
+/*4-6*/
+.sixthpage{
+  display: none;
+}
+
+/*4-7*/
+.seventhpage{
+  display: none;
+}
+/*4-8*/
+.eighthpage{
+  display: none;
+}
+/*4-9*/
+.ninethpage{
+  display: none;
+}
+/*4-10*/
+.tenthpage{
+  display: none;
+}
+.seasawtwo{
+  display: none;
+}
+/*4-11*/
+.eleventhpage{
+  display: none;
+}
+.finishAni{
+  display: none;
+}
+.cards{
+  display: none;
+}
+
+
+
+/*loading new*/
+.ani_peanut{
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bigpeanut{
+  width: 91px;
+  height: 88px;
+  /* position: absolute; */
+  margin: auto;
+  animation-name: smallnut;
+  animation-duration:2.5s; /*完成動畫所花費的時間*/
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite; /*動畫應該播放的次數 infinite是無限循環*/
+}
+@-webkit-keyframes smallnut {
+  0%{-webkit-transform:translateY(-100px) scale(0.5);}
+  100%{-webkit-transform:translateY(375px) scale(0.5);}
+}
+
+
+
+/*4-1*/
+  .mainpage{
+    width: 375px;
+    height: auto;
+  }
+
+  .imagetwo{
+    display: none;
+  }
+  .imagethree{
+    display: none;
+  }
+  .imagefour{
+    display: none;
+  }
+  .imagefive{
+    display: none;
+  }
+  .imagesix{
+    display: none;
+  }
+  .imageseven{
+    display: none;
+  }
+  .imageeight{
+    display: none;
+  }
+  .imagenine{
+    display: none;
+  }
+
+  .background{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .background img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .buttonnextfix{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  
+  .changepage img{
+    position: absolute;
+    margin-top: 135px;
+    margin-right: 35px;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+  }
+  .buttonpreviousfix{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+  }
+  .changepageback img{
+    position: absolute;
+    margin-top: -135px;
+    margin-left: 35px;
+    width: 40px;
+    height: 38px;
+    z-index: 3;
+  }
+
+  
+   
+
+
+
+
+  /*4-3*/
+  .movinghand img{
+    width: 36px;
+    height: 58px;
+    margin-top: 416px;
+    margin-left: 176px;
+  }
+
+
+
+  /*4-4*/
+  
+
+ 
+
+
+
+
+
+
+  /*4-5*/
+
+  .capsule{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    margin: auto;
+    width: 325px;
+    height: 325px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#canvas{
+    background: rgba(255, 255, 255, 0);
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    margin: auto;
+    width: 325px;
+    height: 325px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+  /*4-6*/
+  .drop_prepage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 27.5px;
+    left: 26.3px;
+    margin: auto;
+    z-index: 5;
+  }
+  .drop_nextpage{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    bottom: 28.5px;
+    right: 25px;
+    margin: auto;
+    z-index: 5;
+  }
+
+  .background_4{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 350px;
+    height: 335px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .background_4 img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  
+  .wordpress{
+
+    max-width: 100%;
+    position: absolute;
+    height: 1256px;
+    width: 375px;
+    left: 0;
+
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+  }
+
+  .wordpress img{
+    max-width: 100%;
+    position: absolute;
+    height: 1256px;
+    width: 375px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+  
+  #wordheartone{
+   width: 24px;
+   height: 21px;
+   margin-top: 74px;
+   margin-left: 311px; 
+  }
+  #wordhearttwo{
+    width: 24px;
+    height: 21px;
+    margin-top: 167px;
+    margin-left: 311px; 
+  }
+  #wordheartthree{
+    width: 24px;
+    height: 21px;
+    margin-top: 242px;
+    margin-left: 311px; 
+  }
+  #wordheartfour{
+    width: 24px;
+    height: 21px;
+    margin-top: 335px;
+    margin-left: 311px; 
+  }
+  #wordheartfive{
+    width: 24px;
+    height: 21px;
+    margin-top: 430px;
+    margin-left: 311px; 
+  }
+  #wordheartsix{
+    width: 24px;
+    height: 21px;
+    margin-top: 521px;
+    margin-left: 311px; 
+  }
+  #wordheartseven{
+    width: 24px;
+    height: 21px;
+    margin-top: 605px;
+    margin-left: 311px; 
+  }
+  #wordhearteight{
+    width: 24px;
+    height: 21px;
+    margin-top: 689px;
+    margin-left: 311px; 
+  }
+  #wordheartnine{
+    width: 24px;
+    height: 21px;
+    margin-top: 778px;
+    margin-left: 311px; 
+  }
+  #wordheartten{
+    width: 24px;
+    height: 21px;
+    margin-top: 863px;
+    margin-left: 311px; 
+  }
+  #wordhearteleven{
+    width: 24px;
+    height: 21px;
+    margin-top: 964px;
+    margin-left: 311px; 
+  }
+  #wordhearttwelve{
+    width: 24px;
+    height: 21px;
+    margin-top: 1045px;
+    margin-left: 311px; 
+  }
+  #wordheartthirteen{
+    width: 24px;
+    height: 21px;
+    margin-top: 1158px;
+    margin-left: 311px; 
+  }
+  
+
+
+  
+  /*4-7*/
+
+  .stars{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .starone img{
+    width: 50px;
+    height: 48px;
+    margin-top: 62px;
+    margin-left: 231px;
+  }
+  .startwo img{
+    width: 50px;
+    height: 48px;
+    margin-top: 123px;
+    margin-left: 281px;
+  }
+  .starthree img{
+    width: 50px;
+    height: 48px;
+    margin-top: 80px;
+    margin-left: 57px;
+  }
+  
+  .staronebg{
+    display: none;
+  }
+  .closeone{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .closeone img{
+    width: 10px;
+    height: 10px;
+    margin-top: 108px;
+    margin-left: 262px;
+  }
+
+  .startwobg{
+    display: none;
+  }
+  .closetwo{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .closetwo img{
+    width: 10px;
+    height: 10px;
+    margin-top: 171px;
+    margin-left: 228px;
+  }
+
+  .starthreebg{
+    display: none;
+  }
+  .closethree{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  .closethree img{
+    width: 10px;
+    height: 10px;
+    margin-top: 128px;
+    margin-left: 89px;
+  }
+
+
+  /*4-8*/
+  .climbdotbg{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    width: 375px;
+    height: 666px;
+    overflow-y: hidden;
+  }
+
+  .climbdotup{
+    width: 375px;
+    height: 666px;
+  }
+  .climbdotmid{
+    width: 375px;
+    height: 666px;
+    display: none;
+  }
+  .climbdotdown{
+    width: 375px;
+    height: 666px;
+    display: none;
+  }
+
+  .climbdotup img{
+    width: 135px;
+    height: 135px;
+    margin-top: 62px;
+    margin-left: 120px;
+  }
+  #dotone{
+    width: 3px;
+    height: 30px;
+    margin-top: 217px;
+    margin-left: 186px;
+  }
+  .climbdotmid img{
+    width: 135px;
+    height: 135px;
+    margin-top: 266px;
+    margin-left: 120px;
+  }
+  #dottwo{
+    width: 3px;
+    height: 30px;
+    margin-top: 418px;
+    margin-left: 186px;
+  }
+  .climbdotdown img{
+    width: 135px;
+    height: 135px;
+    margin-top: 469px;
+    margin-left: 120px;
+  }
+
+
+
+
+/*4-11*/
+.buttonpreviousfix{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  width: 375px;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+}
+#pageseleven{
+  position: absolute;
+  margin-top: -135px;
+  margin-left: 35px;
+  width: 40px;
+  height: 38px;
+  z-index: 3;
+}
+.background_5{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.background_5 img{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+#listfront{
+  z-index: 3;
+}
+.workersbg{
+  max-width: 100%;
+  position: absolute;
+  height: 1176px;
+  width: 375px;
+  left: 0;
+  right: 0;
+  /* margin: auto; */
+  z-index: 2;
+  margin-top: 400px;
+}
+#namelist{
+  width: 375px;
+  height: 1176px;
+}
+
+.buttonnextfix11{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  width: 375px;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 4;
+}
+
+.changepage11 img{
+  position: absolute;
+  margin-top: 135px;
+  margin-right: 35px;
+  width: 40px;
+  height: 38px;
+  z-index: 4;
+}
