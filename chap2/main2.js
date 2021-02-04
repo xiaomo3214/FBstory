@@ -344,10 +344,10 @@ function touchHand(){
     var distanceX = (endX3 - startX3);
     var distanceY = (endY3 - startY3);
     if(startX3!=Math.abs(distanceX) || startY3!=Math.abs(distanceY)){
-      if(distanceX < 0 && hand.position().left + distanceX > -35){
+      if(distanceX < 0 && hand.position().left + distanceX > -20){
         hand.offset({left:pos1.left+distanceX});
       }
-      if(distanceX > 0 && hand.position().left + distanceX < 10){
+      if(distanceX > 0 && hand.position().left + distanceX < 0){
         hand.offset({left:pos1.left+distanceX});
       }
       if(distanceY < 0 && hand.position().top + distanceY > -10){
