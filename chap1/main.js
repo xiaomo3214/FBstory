@@ -1,5 +1,6 @@
 /*Music and Sound*/
 var audiobgm = document.getElementById("bgm") 
+var moviegif = document.getElementById("bggif") 
 var stars = document.getElementById("bggif") 
 var soundnextpage2 = new Audio("Music/Ch1_02_SE03_NextPage.mp3")
 var soundnextpage3 = new Audio("Music/Ch1_03_SE03_NextPage.mp3")
@@ -35,6 +36,7 @@ var soundchips2 = new Audio("Music/Ch1_14_SE01_Chips.mp3")
 function playmusic(){
   audiobgm.play();
 }
+
 
 
 var sec = 0, num = 5;
@@ -546,8 +548,11 @@ function changepagesten() {
   // soundnextpage8.play();
   document.getElementById("1-10").style.display = "block";
   document.getElementById("1-8").style.display = "none";
-  audiobgm.src = 'Music/BGM_CH1_10.mp3';
-  bggif.src = 'img/Chap1/1-10/1-10_1-13_gif.gif'
+  moviegif.play();
+  //audiobgm.src = 'Music/BGM_CH1_10.mp3';
+  //bggif.src = 'img/Chap1/1-10/1-10_1-13_gif.gif'
+  moviegif.src = 'img/Chap1/1-10/1-10~1-13.mp4'
+  audiobgm.src = 'Music/BGM_Ch1_00.mp3';
   nextten();
 }
 function changepagesbackseven() {
@@ -577,6 +582,8 @@ function changepagesbackeight() {
   document.getElementById("1-10").style.display = "none";
   audiobgm.src = 'Music/BGM_CH1_07.mp3';
   bggif.src = "img/Chap1/1-10/1_10_bg.png"
+
+  
 }
 
 /*1-11*/
@@ -620,8 +627,11 @@ function changepagesbacktwelve() {
 function changepagesbackthirteen() {
   document.getElementById("1-10").style.display = "block";
   document.getElementById("1-14").style.display = "none";
-  audiobgm.src = 'Music/BGM_CH1_10.mp3';
-  bggif.src = 'img/Chap1/1-10/1-10_1-13_gif.gif';
+  moviegif.play();
+  moviegif.src = 'img/Chap1/1-10/1-10~1-13.mp4'
+  audiobgm.src = 'Music/BGM_Ch1_00.mp3';
+  //audiobgm.src = 'Music/BGM_CH1_10.mp3';
+  //bggif.src = 'img/Chap1/1-10/1-10_1-13_gif.gif';
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
