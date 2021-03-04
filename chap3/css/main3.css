@@ -413,7 +413,7 @@ body{
     display: none;
   }
 
-  /* .peanuts{
+  .peanuts{
     max-height: 100%;
     max-width: 100%;
     position: absolute;
@@ -425,7 +425,7 @@ body{
     right: 0;
     margin: auto;
     z-index: 1;
-  } */
+  }
   .peanutone img{
     width: 68px;
     height: 47px;
