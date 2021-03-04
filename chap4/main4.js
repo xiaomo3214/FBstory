@@ -411,7 +411,7 @@ function changepageseleven() {
   document.getElementById("4-11").style.display = "block";
   document.getElementById("4-10").style.display = "none";
   $(function(){
-             
+    if(nexttime11 < 25)         
     $("#namelist").animate({
       top:"-=2400px"  
   },20000);
